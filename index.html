@@ -9,2104 +9,533 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body{
-
-font-family:Arial,Helvetica,sans-serif;
-background:#f4f7f8;
-color:#333;
-line-height:1.8;
-
+    background: linear-gradient(135deg,#fff1eb,#ace0f9);
+    color:#333;
 }
 
+/* Cabeçalho */
+
 header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac")
+    center/cover;
 
-background:linear-gradient(135deg,#1e88e5,#26a69a);
-
-color:white;
-
-padding:70px 20px;
-
-text-align:center;
-
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
 }
 
 header h1{
-
-font-size:60px;
-
-margin-bottom:20px;
-
+    font-size:60px;
+    animation: aparecer 2s;
 }
 
 header p{
-
-font-size:22px;
-
-max-width:900px;
-
-margin:auto;
-
+    font-size:25px;
+    margin-top:20px;
 }
 
-nav{
 
-background:#1565c0;
-
-padding:15px;
-
-position:sticky;
-
-top:0;
-
-z-index:1000;
-
+.botao{
+    margin-top:30px;
+    padding:15px 35px;
+    background:#ff6f91;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:20px;
+    transition:.3s;
 }
 
-nav ul{
-
-display:flex;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-list-style:none;
-
+.botao:hover{
+    background:#ff9671;
+    transform:scale(1.1);
 }
 
-nav li{
 
-margin:10px 15px;
+/* Animação */
 
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
-nav a{
 
-color:white;
 
-text-decoration:none;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-nav a:hover{
-
-color:#ffee58;
-
-}
-
-.container{
-
-max-width:1200px;
-
-margin:auto;
-
-padding:40px;
-
-}
+/* Seções */
 
 section{
-
-margin-bottom:80px;
-
+    padding:70px 10%;
 }
 
-h2{
 
-font-size:38px;
-
-color:#1565c0;
-
-margin-bottom:20px;
-
-border-left:8px solid #26a69a;
-
-padding-left:15px;
-
+.titulo{
+    text-align:center;
+    font-size:40px;
+    color:#6a1b9a;
+    margin-bottom:40px;
 }
 
-h3{
 
-margin-top:30px;
+/* Cards */
 
-color:#00897b;
-
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
 }
+
 
 .card{
-
-background:white;
-
-padding:30px;
-
-border-radius:12px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-margin-top:25px;
-
+    background:white;
+    width:320px;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    text-align:center;
+    transition:.4s;
 }
 
-.highlight{
 
-background:#e8f5e9;
-
-padding:20px;
-
-border-left:8px solid #43a047;
-
-margin:25px 0;
-
-border-radius:8px;
-
+.card:hover{
+    transform:translateY(-15px);
 }
 
-.quote{
 
-font-style:italic;
-
-font-size:22px;
-
-padding:25px;
-
-background:#fff8e1;
-
-border-left:8px solid orange;
-
-margin-top:25px;
-
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
 }
 
-.grid{
 
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:20px;
-
-margin-top:30px;
-
+.card h2{
+    color:#e91e63;
+    margin:20px;
 }
 
-.box{
 
-background:white;
-
-padding:25px;
-
-border-radius:10px;
-
-box-shadow:0 3px 10px rgba(0,0,0,.1);
-
-transition:.4s;
-
+.card p{
+    line-height:1.6;
 }
 
-.box:hover{
 
-transform:translateY(-8px);
 
+/* Texto */
+
+.texto{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    font-size:20px;
+    line-height:1.8;
+    box-shadow:0 5px 20px #aaa;
 }
+
+
+/* Galeria */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+
+/* Citações */
+
+.citacao{
+    background:linear-gradient(90deg,#667eea,#764ba2);
+    color:white;
+    text-align:center;
+    font-size:30px;
+    padding:60px;
+    font-style:italic;
+}
+
+
+/* Lista */
+
+.lista{
+    background:#fff3cd;
+    border-radius:20px;
+    padding:40px;
+    font-size:20px;
+}
+
+.lista li{
+    margin:15px;
+}
+
+
+/* Rodapé */
 
 footer{
-
-background:#0d47a1;
-
-color:white;
-
-padding:40px;
-
-text-align:center;
-
-margin-top:80px;
-
+    background:#311b92;
+    color:white;
+    text-align:center;
+    padding:30px;
+    font-size:18px;
 }
+
+
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<h1>Empatia, Cooperação e Conexão Humana</h1>
+<h1>🌎 Conexões que Transformam</h1>
 
 <p>
-
-Uma jornada pelo poder da compreensão, do respeito e da colaboração.
-Este guia apresenta conceitos, exemplos e reflexões sobre como as relações
-humanas podem transformar indivíduos, famílias, comunidades e sociedades.
-
+Empatia, Cooperação e a Força da Humanidade Unida
 </p>
+
+<a class="botao" href="#inicio">
+Descubra Mais
+</a>
 
 </header>
 
-<nav>
+
+
+<section id="inicio">
+
+<h1 class="titulo">
+💙 O Poder da Empatia
+</h1>
+
+
+<div class="texto">
+
+<p>
+A empatia é a capacidade de compreender os sentimentos,
+pensamentos e experiências de outras pessoas.
+Ela nos permite enxergar o mundo através dos olhos do outro
+e criar relações mais humanas e respeitosas.
+</p>
+
+<br>
+
+<p>
+Quando praticamos empatia, diminuímos conflitos,
+aumentamos a compreensão e construímos ambientes onde
+todos podem se sentir acolhidos.
+</p>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+🤝 Cooperação: Juntos Somos Mais Fortes
+</h1>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72">
+
+<h2>Trabalho em Equipe</h2>
+
+<p>
+A cooperação permite unir talentos,
+ideias e habilidades para alcançar objetivos
+que seriam difíceis individualmente.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<h2>Respeito</h2>
+
+<p>
+Valorizar diferentes opiniões fortalece grupos
+e cria espaços onde todos podem participar.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac">
+
+<h2>União</h2>
+
+<p>
+Pessoas conectadas conseguem superar desafios
+e construir soluções coletivas.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<div class="citacao">
+
+"Uma pequena atitude de compreensão pode criar
+uma grande mudança na vida de alguém."
+
+</div>
+
+
+
+
+
+
+<section>
+
+
+<h1 class="titulo">
+🌱 Como Criar Mais Conexão Humana
+</h1>
+
+
+
+<div class="lista">
 
 <ul>
 
-<li><a href="#introducao">Introdução</a></li>
+<li>👂 Escutar com atenção verdadeira.</li>
 
-<li><a href="#empatia">Empatia</a></li>
+<li>❤️ Demonstrar cuidado e respeito.</li>
 
-<li><a href="#cooperacao">Cooperação</a></li>
+<li>🌎 Aceitar diferenças culturais e pessoais.</li>
 
-<li><a href="#conexao">Conexão Humana</a></li>
+<li>🤲 Ajudar pessoas ao nosso redor.</li>
 
-<li><a href="#beneficios">Benefícios</a></li>
+<li>💬 Dialogar antes de julgar.</li>
 
-</ul>
-
-</nav>
-
-<div class="container">
-
-<section id="introducao">
-
-<h2>Introdução</h2>
-
-<div class="card">
-
-<p>
-
-Os seres humanos são naturalmente sociais. Desde o nascimento,
-dependemos de outras pessoas para sobreviver, aprender e crescer.
-Nossa capacidade de criar vínculos permitiu o desenvolvimento de famílias,
-aldeias, cidades e civilizações inteiras.
-
-</p>
-
-<p>
-
-Ao longo da história, grandes conquistas foram possíveis porque pessoas
-compartilharam conhecimentos, trabalharam juntas e confiaram umas nas outras.
-A ciência, a arte, a tecnologia e a cultura floresceram graças à cooperação.
-
-</p>
-
-<p>
-
-Neste contexto, três elementos desempenham papel fundamental:
-
-</p>
-
-<ul>
-
-<li>Empatia</li>
-
-<li>Cooperação</li>
-
-<li>Conexão Humana</li>
-
-</ul>
-
-<p>
-
-Esses pilares fortalecem relacionamentos, reduzem conflitos,
-favorecem o aprendizado coletivo e ajudam a construir ambientes
-mais saudáveis e acolhedores.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="empatia">
-
-<h2>O que é Empatia?</h2>
-
-<div class="card">
-
-<p>
-
-Empatia é a capacidade de compreender ou tentar compreender
-como outra pessoa percebe uma situação, considerando seus sentimentos,
-experiências e contexto. Ela não exige concordar com tudo o que o outro pensa,
-mas envolve reconhecer que diferentes pessoas podem viver a mesma situação de
-formas distintas.
-
-</p>
-
-<p>
-
-Ao praticar a empatia, criamos espaço para conversas mais respeitosas,
-reduzimos julgamentos precipitados e fortalecemos relações de confiança.
-
-</p>
-
-</div>
-
-<div class="highlight">
-
-<strong>Empatia significa:</strong>
-
-<ul>
-
-<li>Ouvir antes de responder.</li>
-
-<li>Demonstrar respeito.</li>
-
-<li>Buscar compreender diferentes perspectivas.</li>
-
-<li>Valorizar a dignidade de cada pessoa.</li>
-
-<li>Reconhecer emoções sem desmerecê-las.</li>
+<li>✨ Compartilhar conhecimento e experiências.</li>
 
 </ul>
 
 </div>
 
-<div class="grid">
-
-<div class="box">
-
-<h3>Escutar</h3>
-
-<p>
-
-Ouvir com atenção permite compreender melhor as necessidades,
-expectativas e preocupações de outra pessoa.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Observar</h3>
-
-<p>
-
-Expressões faciais, postura e tom de voz também comunicam informações
-importantes além das palavras.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Compreender</h3>
-
-<p>
-
-Buscar entender o contexto ajuda a evitar conclusões precipitadas
-e favorece respostas mais cuidadosas.
-
-</p>
-
-</div>
-
-</div>
 
 </section>
 
-<section id="cooperacao">
 
-<h2>O Poder da Cooperação</h2>
 
-<div class="card">
 
-<p>
 
-Cooperar significa trabalhar em conjunto para alcançar um objetivo comum.
-Em vez de agir isoladamente, as pessoas unem conhecimentos,
-habilidades e esforços para resolver desafios.
 
-</p>
+<section>
 
-<p>
+<h1 class="titulo">
+📸 Momentos de Humanidade
+</h1>
 
-A cooperação está presente em diferentes contextos:
-na família, na escola, no ambiente de trabalho,
-na ciência, no esporte e em ações comunitárias.
 
-</p>
+<div class="galeria">
 
-<p>
 
-Projetos colaborativos costumam reunir perspectivas diversas,
-o que pode ampliar a criatividade e melhorar a qualidade das soluções.
+<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18">
 
-</p>
 
-</div>
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
 
-<div class="grid">
 
-<div class="box">
+<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998">
 
-<h3>Família</h3>
 
-<p>
+<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902">
 
-Dividir tarefas domésticas,
-ouvir uns aos outros
-e apoiar momentos difíceis fortalece os vínculos familiares.
 
-</p>
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
+
+
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330">
+
 
 </div>
 
-<div class="box">
-
-<h3>Escola</h3>
-
-<p>
-
-Trabalhos em grupo incentivam diálogo,
-resolução de problemas
-e aprendizagem compartilhada.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Comunidade</h3>
-
-<p>
-
-Ações coletivas como mutirões,
-campanhas solidárias e projetos sociais
-mostram a força da colaboração.
-
-</p>
-
-</div>
-
-</div>
 
 </section>
 
-<section id="conexao">
 
-<h2>Conexão Humana</h2>
 
-<div class="card">
 
-<p>
 
-Conexão humana refere-se ao sentimento de pertencimento,
-confiança e proximidade construído entre pessoas.
 
-</p>
+<section>
 
-<p>
 
-Ela pode surgir em amizades,
-famílias,
-equipes,
-comunidades
-e até em encontros breves marcados por respeito e atenção.
+<h1 class="titulo">
+🌟 O Futuro da Humanidade
+</h1>
 
-</p>
+
+<div class="texto">
 
 <p>
-
-Relacionamentos baseados em confiança costumam favorecer diálogo,
-cooperação e apoio mútuo diante de desafios.
-
+O futuro depende da nossa capacidade de criar conexões
+mais profundas. Tecnologia, conhecimento e inovação são
+importantes, mas são as relações humanas que dão significado
+às nossas conquistas.
 </p>
+
+
+<br>
+
+
+<p>
+Uma sociedade baseada em empatia e cooperação é capaz de
+resolver problemas, promover inclusão e construir um mundo
+mais equilibrado para todos.
+</p>
+
 
 </div>
 
-<div class="quote">
-
-"A conexão humana nasce quando alguém se sente ouvido, respeitado e valorizado."
-
-</div>
 
 </section>
 
-<section id="beneficios">
 
-<h2>Benefícios da Empatia e Cooperação</h2>
 
-<div class="grid">
 
-<div class="box">
-
-<h3>Relacionamentos</h3>
-
-<p>
-
-Fortalecem amizades,
-famílias e equipes.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Saúde Mental</h3>
-
-<p>
-
-Ambientes acolhedores podem contribuir para redução do estresse
-e aumento da sensação de apoio social.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Aprendizagem</h3>
-
-<p>
-
-A troca de experiências amplia conhecimentos
-e favorece o desenvolvimento coletivo.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Sociedade</h3>
-
-<p>
-
-A colaboração fortalece comunidades,
-estimula iniciativas solidárias
-e incentiva soluções compartilhadas.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
 
 <footer>
 
-<h2>Empatia • Cooperação • Conexão Humana</h2>
-
 <p>
-
-Parte 1 — Introdução e Fundamentos.
-
+🌍 Empatia • Cooperação • Conexão Humana
 </p>
 
 <p>
-
-Continua na Parte 2 com os tipos de empatia,
-inteligência emocional,
-escuta ativa,
-comunicação não violenta
-e exemplos práticos do cotidiano.
-
+Construindo pontes entre pessoas todos os dias.
 </p>
 
 </footer>
+
+
 
 </body>
 </html>
 
 
- <!-- ===================================================== -->
-<!-- PARTE 2 - CONTINUAÇÃO -->
-<!-- Cole este trecho antes da tag </footer> ou </body> -->
-<!-- ===================================================== -->
 
-<section id="tipos-empatia">
 
-<h2>Os Diferentes Tipos de Empatia</h2>
+<!-- NOVA CONTINUAÇÃO -->
 
-<div class="card">
+<section>
 
-<p>
+<h1 class="titulo">
+🌻 Pequenas Atitudes, Grandes Transformações
+</h1>
 
-Embora muitas vezes utilizemos apenas a palavra "empatia", pesquisadores e
-educadores costumam descrever diferentes formas pelas quais ela pode se
-manifestar. Essas formas trabalham juntas e ajudam as pessoas a compreender,
-respeitar e apoiar umas às outras.
+<div class="cards">
 
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Empatia Cognitiva</h3>
-
-<p>
-
-É a capacidade de compreender como outra pessoa enxerga uma situação.
-Envolve perceber diferentes pontos de vista e considerar que experiências
-distintas levam a interpretações diferentes.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Empatia Emocional</h3>
-
-<p>
-
-Relaciona-se ao reconhecimento das emoções do outro. Ao perceber que alguém
-está feliz, triste, preocupado ou frustrado, podemos responder de forma mais
-cuidadosa e respeitosa.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Empatia Compassiva</h3>
-
-<p>
-
-Além de compreender, surge o desejo de oferecer apoio quando possível,
-respeitando os limites e a autonomia da outra pessoa.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="emocional">
-
-<h2>Inteligência Emocional</h2>
 
 <div class="card">
 
-<p>
+<img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8">
 
-A inteligência emocional envolve reconhecer, compreender e administrar as
-próprias emoções, além de lidar de forma equilibrada com as emoções dos
-outros.
-
-</p>
+<h2>Gentileza</h2>
 
 <p>
-
-Ela não significa esconder sentimentos, mas aprender a expressá-los de maneira
-construtiva.
-
+Um sorriso, uma palavra amiga ou uma simples ajuda
+podem transformar completamente o dia de uma pessoa.
+A gentileza cria uma corrente positiva que se espalha
+entre comunidades.
 </p>
 
 </div>
 
-<div class="highlight">
 
-<strong>Algumas habilidades importantes:</strong>
-
-<ul>
-
-<li>Autoconhecimento.</li>
-
-<li>Autocontrole.</li>
-
-<li>Empatia.</li>
-
-<li>Respeito nas conversas.</li>
-
-<li>Capacidade de colaborar.</li>
-
-<li>Resolução de conflitos.</li>
-
-<li>Comunicação clara.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="escuta">
-
-<h2>Escuta Ativa</h2>
 
 <div class="card">
 
-<p>
-
-Escutar ativamente significa prestar atenção ao que a outra pessoa está
-dizendo sem interromper constantemente, demonstrando interesse genuíno pela
-conversa.
-
-</p>
-
-<p>
-
-Uma boa escuta favorece relações de confiança e reduz mal-entendidos.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Olhe com atenção</h3>
-
-<p>
-
-Manter contato visual quando apropriado demonstra interesse e respeito.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Evite interrupções</h3>
-
-<p>
-
-Permitir que a outra pessoa conclua seu raciocínio torna a conversa mais
-produtiva.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Faça perguntas</h3>
-
-<p>
-
-Perguntas respeitosas ajudam a compreender melhor a situação apresentada.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Confirme o entendimento</h3>
-
-<p>
-
-Repetir com suas próprias palavras o que foi compreendido pode evitar
-interpretações equivocadas.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="cnv">
-
-<h2>Comunicação Não Violenta</h2>
-
-<div class="card">
-
-<p>
-
-A Comunicação Não Violenta (CNV) propõe uma forma de diálogo baseada no
-respeito, na observação dos fatos, na identificação de sentimentos e na
-expressão clara das necessidades e dos pedidos.
-
-</p>
-
-<p>
-
-Seu objetivo é fortalecer relações e favorecer soluções construídas em
-conjunto, reduzindo acusações e julgamentos.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>1. Observe</h3>
-
-<p>
-
-Descreva os fatos sem exageros ou ataques pessoais.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>2. Reconheça sentimentos</h3>
-
-<p>
-
-Identifique como você se sente diante da situação.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>3. Identifique necessidades</h3>
-
-<p>
-
-Procure compreender quais necessidades estão relacionadas ao problema.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>4. Faça pedidos claros</h3>
-
-<p>
-
-Expresse de maneira respeitosa o que gostaria que acontecesse.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="cotidiano">
-
-<h2>Empatia no Cotidiano</h2>
-
-<div class="card">
-
-<p>
-
-Pequenas atitudes podem contribuir para relações mais respeitosas e
-cooperativas. Nem sempre são necessárias grandes ações; gestos simples podem
-fazer diferença no dia a dia.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Na Escola</h3>
-
-<p>
-
-Ajudar colegas em atividades, respeitar opiniões diferentes e incentivar o
-trabalho em equipe.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Na Família</h3>
-
-<p>
-
-Compartilhar responsabilidades, conversar com respeito e apoiar uns aos
-outros em momentos difíceis.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>No Trabalho</h3>
-
-<p>
-
-Valorizar a colaboração, ouvir ideias diferentes e reconhecer o esforço das
-pessoas.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Na Comunidade</h3>
-
-<p>
-
-Participar de ações voluntárias, cuidar dos espaços públicos e colaborar com
-projetos sociais.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="barreiras">
-
-<h2>Barreiras para a Empatia</h2>
-
-<div class="card">
-
-<p>
-
-Diversos fatores podem dificultar a construção de relações empáticas. Entre
-eles estão julgamentos precipitados, preconceitos, falta de diálogo,
-estresse, desinformação e dificuldades de comunicação.
-
-</p>
-
-<p>
-
-Reconhecer essas barreiras é um primeiro passo para desenvolver relações mais
-abertas e respeitosas.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Julgamentos</h3>
-
-<p>
-
-Tirar conclusões antes de compreender o contexto pode prejudicar o diálogo.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Preconceitos</h3>
-
-<p>
-
-Ideias preconcebidas dificultam a compreensão das experiências dos outros.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Falta de diálogo</h3>
-
-<p>
-
-Conversas superficiais ou inexistentes reduzem oportunidades de entendimento.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Desinformação</h3>
-
-<p>
-
-Buscar informações confiáveis ajuda a evitar interpretações equivocadas.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="reflexao">
-
-<h2>Reflexão</h2>
-
-<div class="quote">
-
-"A cooperação fortalece grupos. A empatia fortalece pessoas. Juntas, elas
-podem contribuir para comunidades mais respeitosas, solidárias e preparadas
-para enfrentar desafios coletivos."
-
-</div>
-
-</section>
-
-
-<!-- ===================================================== -->
-<!-- PARTE 3 - COOPERAÇÃO E CONEXÃO HUMANA -->
-<!-- Cole este trecho antes da tag </footer> ou </body> -->
-<!-- ===================================================== -->
-
-<section id="historia-cooperacao">
-
-<h2>A Cooperação ao Longo da História</h2>
-
-<div class="card">
-
-<p>
-Desde os primeiros grupos humanos, a cooperação desempenhou um papel importante
-na sobrevivência. Pessoas compartilhavam alimentos, conhecimentos, ferramentas
-e responsabilidades para enfrentar desafios como encontrar abrigo, obter água,
-cultivar alimentos e proteger a comunidade.
-</p>
-
-<p>
-Ao longo do tempo, essa capacidade de trabalhar em conjunto contribuiu para o
-desenvolvimento da agricultura, das cidades, das universidades, da ciência, da
-medicina, da arte e de muitas outras áreas da sociedade.
-</p>
-
-<p>
-Atualmente, a cooperação continua presente em projetos científicos
-internacionais, ações humanitárias, programas de preservação ambiental,
-iniciativas educacionais e no cotidiano das famílias e comunidades.
-</p>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="confianca">
-
-<h2>A Importância da Confiança</h2>
-
-<div class="card">
-
-<p>
-
-A confiança é um dos pilares das relações humanas. Ela é construída
-gradualmente por meio da honestidade, da responsabilidade, do respeito e da
-coerência entre palavras e ações.
-
-</p>
-
-<p>
-
-Quando existe confiança, as pessoas tendem a colaborar com mais facilidade,
-compartilhar ideias e enfrentar desafios em conjunto.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Honestidade</h3>
-
-<p>
-Agir com sinceridade fortalece os relacionamentos.
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Respeito</h3>
-
-<p>
-Valorizar diferentes opiniões favorece ambientes colaborativos.
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Compromisso</h3>
-
-<p>
-Cumprir acordos ajuda a construir confiança ao longo do tempo.
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Responsabilidade</h3>
-
-<p>
-Assumir as consequências das próprias ações demonstra maturidade.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="familia">
-
-<h2>Empatia na Família</h2>
-
-<div class="card">
-
-<p>
-
-A família costuma ser um dos primeiros espaços onde aprendemos sobre diálogo,
-cooperação e respeito. Compartilhar responsabilidades, ouvir diferentes pontos
-de vista e resolver conflitos de forma construtiva pode fortalecer os vínculos.
-
-</p>
-
-<p>
-
-Pequenos gestos, como agradecer, pedir desculpas quando necessário, oferecer
-ajuda e reconhecer o esforço dos outros, contribuem para um ambiente mais
-acolhedor.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="escola">
-
-<h2>Empatia na Escola</h2>
-
-<div class="card">
-
-<p>
-
-A escola reúne pessoas com histórias, interesses e habilidades diferentes.
-Por isso, ela é um ambiente importante para desenvolver convivência,
-cooperação e respeito mútuo.
-
-</p>
-
-<p>
-
-Projetos em grupo, atividades colaborativas e conversas abertas ajudam os
-estudantes a aprender não apenas conteúdos acadêmicos, mas também habilidades
-sociais importantes.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Respeitar diferenças</h3>
-
-<p>
-Cada estudante possui seu próprio ritmo de aprendizagem e suas experiências.
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Compartilhar conhecimento</h3>
-
-<p>
-Ensinar um colega também é uma forma de aprender.
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Resolver conflitos</h3>
-
-<p>
-O diálogo costuma ser mais eficaz do que atitudes impulsivas.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="trabalho">
-
-<h2>Empatia no Ambiente de Trabalho</h2>
-
-<div class="card">
-
-<p>
-
-Organizações que valorizam a colaboração tendem a criar ambientes em que as
-pessoas podem trocar ideias, aprender umas com as outras e resolver problemas
-de forma conjunta.
-
-</p>
-
-<p>
-
-Uma cultura baseada em respeito e escuta favorece relações profissionais mais
-saudáveis e produtivas.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Trabalho em Equipe</h3>
-
-<p>
-Projetos colaborativos reúnem diferentes conhecimentos e experiências.
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Feedback Respeitoso</h3>
-
-<p>
-Comentários construtivos podem contribuir para o desenvolvimento profissional.
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Reconhecimento</h3>
-
-<p>
-Valorizar o esforço das pessoas fortalece o sentimento de pertencimento.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="diversidade">
-
-<h2>Diversidade e Inclusão</h2>
-
-<div class="card">
-
-<p>
-
-Cada pessoa possui uma história única, formada por diferentes experiências,
-culturas, habilidades, crenças e perspectivas. A diversidade amplia as
-possibilidades de aprendizagem e inovação.
-
-</p>
-
-<p>
-
-Promover ambientes inclusivos significa buscar que todas as pessoas sejam
-tratadas com respeito, tenham oportunidades de participação e possam
-contribuir com suas capacidades.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="solidariedade">
+<img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b">
 
 <h2>Solidariedade</h2>
 
-<div class="card">
-
 <p>
-
-A solidariedade representa a disposição para colaborar com outras pessoas e
-com a comunidade. Ela pode se manifestar por meio de ações simples, como
-oferecer apoio, compartilhar conhecimentos, participar de iniciativas sociais
-ou contribuir para melhorar o ambiente em que vivemos.
-
+A solidariedade nasce quando percebemos que os desafios
+dos outros também fazem parte da nossa humanidade.
+Ajudar é uma forma de construir esperança.
 </p>
 
 </div>
 
-<div class="highlight">
-
-<strong>Exemplos de atitudes solidárias:</strong>
-
-<ul>
-
-<li>Participar de campanhas comunitárias.</li>
-
-<li>Compartilhar conhecimento com outras pessoas.</li>
-
-<li>Oferecer ajuda quando possível.</li>
-
-<li>Respeitar quem pensa diferente.</li>
-
-<li>Cuidar dos espaços públicos.</li>
-
-<li>Incentivar ações coletivas.</li>
-
-<li>Praticar gentileza no dia a dia.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="habilidades">
-
-<h2>Habilidades para Fortalecer a Conexão Humana</h2>
-
-<div class="grid">
-
-<div class="box">
-<h3>Escutar</h3>
-<p>Ouvir com atenção demonstra interesse e respeito.</p>
-</div>
-
-<div class="box">
-<h3>Observar</h3>
-<p>Perceber sinais verbais e não verbais ajuda na compreensão.</p>
-</div>
-
-<div class="box">
-<h3>Dialogar</h3>
-<p>Conversas respeitosas favorecem soluções compartilhadas.</p>
-</div>
-
-<div class="box">
-<h3>Cooperar</h3>
-<p>Trabalhar em equipe amplia possibilidades de aprendizagem.</p>
-</div>
-
-<div class="box">
-<h3>Respeitar</h3>
-<p>Valorizar diferentes perspectivas fortalece a convivência.</p>
-</div>
-
-<div class="box">
-<h3>Aprender</h3>
-<p>Estar aberto a novas ideias contribui para o crescimento pessoal.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="citacoes">
-
-<h2>Pensamentos Inspiradores</h2>
-
-<div class="quote">
-
-"A empatia abre caminhos para o diálogo; a cooperação transforma esse diálogo
-em ação."
-
-</div>
-
-<div class="quote">
-
-"Pequenos gestos de respeito e gentileza podem fortalecer grandes relações."
-
-</div>
-
-<div class="quote">
-
-"Comunidades mais fortes são construídas quando pessoas trabalham juntas em
-busca de objetivos comuns."
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- PARTE 4 - SAÚDE, EDUCAÇÃO E PRÁTICAS -->
-<!-- Cole este trecho antes da tag </footer> ou </body> -->
-<!-- ===================================================== -->
-
-<section id="saude-mental">
-
-<h2>Empatia e Bem-Estar</h2>
-
-<div class="card">
-
-<p>
-
-Relações baseadas em respeito, diálogo e apoio mútuo podem contribuir para o
-bem-estar das pessoas. Sentir-se ouvido e acolhido fortalece o sentimento de
-pertencimento e pode tornar os desafios do cotidiano mais fáceis de enfrentar.
-
-</p>
-
-<p>
-
-Da mesma forma, oferecer apoio de maneira respeitosa pode fortalecer vínculos
-e incentivar ambientes mais acolhedores em famílias, escolas, comunidades e
-locais de trabalho.
-
-</p>
-
-<p>
-
-Cada pessoa enfrenta desafios diferentes. Por isso, ouvir sem julgamentos e
-demonstrar respeito pode fazer grande diferença na qualidade das relações.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="gentileza">
-
-<h2>O Poder da Gentileza</h2>
-
-<div class="card">
-
-<p>
-
-A gentileza consiste em pequenas atitudes de respeito e consideração pelo
-próximo. Muitas vezes ela se manifesta por meio de ações simples que tornam o
-ambiente mais agradável para todos.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Cumprimentar</h3>
-
-<p>
-
-Um simples "bom dia" pode iniciar uma conversa de maneira positiva.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Agradecer</h3>
-
-<p>
-
-Reconhecer a ajuda recebida fortalece relações de confiança.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Pedir licença</h3>
-
-<p>
-
-Demonstrar educação e respeito contribui para uma convivência harmoniosa.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Reconhecer esforços</h3>
-
-<p>
-
-Valorizar o trabalho e a dedicação das pessoas incentiva a colaboração.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="educacao">
-
-<h2>Educação para a Empatia</h2>
-
-<div class="card">
-
-<p>
-
-A empatia pode ser desenvolvida ao longo da vida por meio da convivência,
-do diálogo e da aprendizagem contínua. Famílias, escolas, universidades,
-organizações e comunidades desempenham papel importante nesse processo.
-
-</p>
-
-<p>
-
-Experiências que incentivam cooperação, escuta ativa e resolução pacífica de
-conflitos ajudam a construir ambientes mais respeitosos.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="atividades">
-
-<h2>Atividades para Desenvolver Empatia</h2>
-
-<div class="grid">
-
-<div class="box">
-
-<h3>Escuta em Duplas</h3>
-
-<p>
-
-Uma pessoa fala durante alguns minutos enquanto a outra apenas escuta com
-atenção. Depois, quem ouviu resume o que compreendeu.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Projetos Colaborativos</h3>
-
-<p>
-
-Grupos podem planejar e executar atividades em conjunto, aprendendo a dividir
-tarefas e responsabilidades.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Leitura Compartilhada</h3>
-
-<p>
-
-Ler histórias e conversar sobre os sentimentos e decisões dos personagens
-estimula diferentes perspectivas.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Voluntariado</h3>
-
-<p>
-
-Participar de ações comunitárias permite conhecer diferentes realidades e
-fortalecer a cooperação.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Diário de Gratidão</h3>
-
-<p>
-
-Registrar diariamente acontecimentos positivos pode incentivar uma visão mais
-atenta às relações e ao apoio recebido.
-
-</p>
-
-</div>
-
-<div class="box">
-
-<h3>Rodas de Conversa</h3>
-
-<p>
-
-Espaços de diálogo ajudam participantes a compartilhar experiências e ouvir
-outras perspectivas com respeito.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="valores">
-
-<h2>Valores que Fortalecem a Convivência</h2>
-
-<div class="card">
-
-<p>
-
-A convivência respeitosa é construída diariamente por meio de atitudes,
-escolhas e comportamentos. Alguns valores podem orientar esse processo.
-
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-<h3>Respeito</h3>
-<p>Reconhecer a dignidade de todas as pessoas.</p>
-</div>
-
-<div class="box">
-<h3>Honestidade</h3>
-<p>Agir com sinceridade e responsabilidade.</p>
-</div>
-
-<div class="box">
-<h3>Solidariedade</h3>
-<p>Contribuir para o bem-estar coletivo.</p>
-</div>
-
-<div class="box">
-<h3>Cooperação</h3>
-<p>Buscar soluções em conjunto.</p>
-</div>
-
-<div class="box">
-<h3>Responsabilidade</h3>
-<p>Assumir compromissos e consequências das próprias ações.</p>
-</div>
-
-<div class="box">
-<h3>Justiça</h3>
-<p>Tratar as pessoas com equilíbrio e imparcialidade.</p>
-</div>
-
-<div class="box">
-<h3>Gentileza</h3>
-<p>Demonstrar consideração nas pequenas atitudes.</p>
-</div>
-
-<div class="box">
-<h3>Diálogo</h3>
-<p>Resolver diferenças por meio da conversa respeitosa.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="desafios">
-
-<h2>Desafios da Sociedade Atual</h2>
-
-<div class="card">
-
-<p>
-
-Vivemos em um mundo conectado por tecnologias de comunicação, mas isso não
-garante, por si só, relações humanas profundas. Em muitos contextos, o ritmo
-acelerado da vida pode reduzir o tempo dedicado ao diálogo e à convivência.
-
-</p>
-
-<p>
-
-Por isso, fortalecer habilidades como escuta ativa, cooperação, respeito e
-empatia continua sendo importante para construir comunidades mais acolhedoras
-e preparadas para enfrentar desafios coletivos.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="reflexoes">
-
-<h2>Reflexões</h2>
-
-<div class="quote">
-
-"Escutar com atenção é uma forma de demonstrar respeito."
-
-</div>
-
-<div class="quote">
-
-"Cooperar não significa pensar igual, mas trabalhar juntos mesmo diante de
-diferenças."
-
-</div>
-
-<div class="quote">
-
-"Cada encontro humano é uma oportunidade para aprender algo novo."
-
-</div>
-
-<div class="quote">
-
-"A confiança cresce quando palavras e ações caminham na mesma direção."
-
-</div>
-
-<div class="quote">
-
-"Uma comunidade se fortalece quando seus integrantes compartilham
-responsabilidades e cuidam uns dos outros."
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-
-<section id="conclusao-parcial">
-
-<h2>Conclusão Parcial</h2>
-
-<div class="card">
-
-<p>
-
-Empatia, cooperação e conexão humana são habilidades que podem ser
-desenvolvidas ao longo da vida. Elas envolvem disposição para ouvir,
-aprender, dialogar e construir soluções compartilhadas.
-
-</p>
-
-<p>
-
-Ao praticar essas atitudes em diferentes contextos, contribuímos para relações
-mais respeitosas, ambientes colaborativos e comunidades mais fortes.
-
-</p>
-
-<p>
-
-Na próxima parte serão apresentados conhecimentos sobre pesquisas
-científicas relacionadas ao comportamento cooperativo, curiosidades,
-perguntas frequentes, uma linha do tempo da cooperação humana e recursos
-interativos em JavaScript para tornar o site mais dinâmico.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ===================================================== -->
-<!-- FINALIZAÇÃO DO SITE -->
-<!-- ===================================================== -->
-
-<section id="final">
-
-<h2>Conclusão: Construindo um Mundo Mais Humano</h2>
-
-<div class="card">
-
-<p>
-Ao longo deste conteúdo, exploramos a importância da empatia, da cooperação e
-da conexão humana como bases essenciais para uma sociedade mais equilibrada e
-acolhedora.
-</p>
-
-<p>
-A empatia nos ensina a olhar além de nossas próprias experiências e buscar
-compreender os sentimentos, desafios e perspectivas das outras pessoas. Ela
-nos lembra que cada indivíduo possui uma história única e merece ser tratado
-com respeito e consideração.
-</p>
-
-<p>
-A cooperação demonstra que somos capazes de alcançar resultados maiores quando
-unimos nossas capacidades. Trabalhar juntos, compartilhar conhecimentos e
-valorizar diferentes habilidades permite criar soluções mais criativas e
-eficientes para os desafios da vida.
-</p>
-
-<p>
-A conexão humana representa os laços que construímos ao longo da vida.
-Amizades, famílias, comunidades e equipes se fortalecem quando existe diálogo,
-confiança e disposição para apoiar uns aos outros.
-</p>
-
-</div>
-
-
-<div class="highlight">
-
-<h3>Pequenas atitudes podem transformar relações:</h3>
-
-<ul>
-
-<li>Ouvir antes de julgar.</li>
-
-<li>Respeitar opiniões diferentes.</li>
-
-<li>Demonstrar gentileza no cotidiano.</li>
-
-<li>Ajudar quando alguém precisar.</li>
-
-<li>Reconhecer o valor das pessoas ao nosso redor.</li>
-
-<li>Buscar soluções através do diálogo.</li>
-
-<li>Construir ambientes baseados em confiança e respeito.</li>
-
-</ul>
-
-</div>
 
 
 <div class="card">
 
-<h3>Um compromisso com a humanidade</h3>
+<img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c">
+
+<h2>Cuidado</h2>
 
 <p>
-Construir relações melhores é uma responsabilidade coletiva. Cada conversa,
-cada escolha e cada atitude podem contribuir para criar espaços onde as
-pessoas se sintam valorizadas, compreendidas e incluídas.
-</p>
-
-<p>
-A mudança começa nas ações do dia a dia. Quando praticamos empatia,
-cooperação e respeito, ajudamos a formar uma sociedade mais solidária,
-consciente e preparada para enfrentar desafios juntos.
-</p>
-
-<p>
-O futuro das relações humanas depende da nossa capacidade de reconhecer que,
-apesar das diferenças, todos compartilhamos a necessidade de sermos ouvidos,
-respeitados e acolhidos.
-</p>
-
-</div>
-
-
-<div class="quote">
-
-"Ser humano é mais do que existir individualmente.
-É aprender, compartilhar, cooperar e construir caminhos junto com outras
-pessoas."
-
-</div>
-
-
-<div class="card">
-
-<h3>Mensagem Final</h3>
-
-<p>
-Que este conhecimento inspire novas atitudes, conversas mais profundas e
-relações mais positivas. A empatia cria pontes, a cooperação transforma
-possibilidades em realidade e a conexão humana torna nossa caminhada mais
-significativa.
-</p>
-
-<p>
-Cada pessoa possui o poder de contribuir para um mundo melhor através de
-pequenos gestos de compreensão, respeito e solidariedade.
-</p>
-
-</div>
-
-
-</section>
-
-
-<footer>
-
-<h2>Empatia • Cooperação • Conexão Humana</h2>
-
-<p>
-Um espaço dedicado à valorização das relações humanas e da construção de uma
-convivência mais respeitosa.
-</p>
-
-<p>
-  Projeto sobre Empatia, Cooperação e Conexão Humana
-</p>
-
-</footer>
-
-<!-- ===================================================== -->
-<!-- GALERIA DE IMAGENS - EMPATIA E CONEXÃO HUMANA -->
-<!-- ===================================================== -->
-
-<section id="galeria">
-
-<h2>Galeria: A Força das Relações Humanas</h2>
-
-<div class="card">
-
-<p>
-Imagens podem representar sentimentos, momentos e experiências que fazem parte
-da vida humana. A cooperação, a amizade, o cuidado e o diálogo aparecem em
-diversas situações do nosso cotidiano.
-</p>
-
-</div>
-
-
-<div class="gallery">
-
-
-<div class="image-card">
-
-<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"
-alt="Pessoas juntas demonstrando amizade">
-
-<h3>Amizade e União</h3>
-
-<p>
-Relacionamentos construídos com confiança e respeito fortalecem a conexão
-entre as pessoas.
-</p>
-
-</div>
-
-
-
-<div class="image-card">
-
-<img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a"
-alt="Pessoas ajudando umas às outras">
-
-<h3>Cooperação</h3>
-
-<p>
-Trabalhar juntos permite alcançar objetivos que seriam mais difíceis de
-realizar individualmente.
-</p>
-
-</div>
-
-
-
-<div class="image-card">
-
-<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18"
-alt="Grupo de pessoas conversando">
-
-<h3>Comunicação</h3>
-
-<p>
-Conversas abertas e sinceras ajudam a criar relações mais fortes.
-</p>
-
-</div>
-
-
-
-<div class="image-card">
-
-<img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb"
-alt="Apoio e solidariedade">
-
-<h3>Solidariedade</h3>
-
-<p>
-Pequenas atitudes de cuidado podem gerar grandes impactos na vida das pessoas.
-</p>
-
-</div>
-
-
-
-<div class="image-card">
-
-<img src="https://images.unsplash.com/photo-1509099836639-18ba02b47826"
-alt="Crianças aprendendo juntas">
-
-<h3>Aprendizado Coletivo</h3>
-
-<p>
-Compartilhar conhecimentos ajuda comunidades a crescerem.
-</p>
-
-</div>
-
-
-
-<div class="image-card">
-
-<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902"
-alt="Equipe trabalhando em conjunto">
-
-<h3>Trabalho em Equipe</h3>
-
-<p>
-Diferentes habilidades podem se unir para criar soluções melhores.
+Cuidar das pessoas significa reconhecer seus sentimentos,
+suas necessidades e sua importância dentro da sociedade.
 </p>
 
 </div>
@@ -2117,127 +546,121 @@ Diferentes habilidades podem se unir para criar soluções melhores.
 </section>
 
 
-<!-- ===================================================== -->
-<!-- CSS PARA GALERIA -->
-<!-- ===================================================== -->
-
-<style>
-
-.gallery{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-margin-top:40px;
-
-}
 
 
-.image-card{
-
-background:white;
-
-border-radius:15px;
-
-overflow:hidden;
-
-box-shadow:0 5px 20px rgba(0,0,0,.15);
-
-transition:.4s;
-
-}
-
-
-.image-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-
-.image-card img{
-
-width:100%;
-
-height:230px;
-
-object-fit:cover;
-
-}
-
-
-.image-card h3{
-
-color:#1565c0;
-
-padding:20px 20px 10px;
-
-}
-
-
-.image-card p{
-
-padding:0 20px 25px;
-
-color:#555;
-
-}
-
-
-
-.banner-final{
-
-background:
-
-linear-gradient(
-rgba(0,0,0,.5),
-rgba(0,0,0,.5)
-),
-
-url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac");
-
-background-size:cover;
-
-background-position:center;
-
-height:400px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-color:white;
-
-text-align:center;
-
-font-size:35px;
-
-font-weight:bold;
-
-border-radius:20px;
-
-margin:50px 0;
-
-}
-
-</style>
-
-
-
-<!-- ===================================================== -->
-<!-- BANNER INSPIRADOR -->
-<!-- ===================================================== -->
 
 <section>
 
-<div class="banner-final">
+<h1 class="titulo">
+🌎 A Diversidade Aproxima Pessoas
+</h1>
 
-Juntos construímos conexões que transformam vidas
+
+<div class="texto">
+
+<p>
+Cada pessoa possui uma história única, formada por
+experiências, culturas, sonhos e conhecimentos diferentes.
+A diversidade não deve ser vista como uma barreira,
+mas como uma oportunidade de aprender e crescer.
+</p>
+
+<br>
+
+<p>
+Quando convivemos com diferentes perspectivas,
+desenvolvemos mais compreensão e encontramos novas
+formas de resolver problemas.
+</p>
+
+</div>
+
+
+<br><br>
+
+
+<div class="galeria">
+
+
+<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+
+<img src="https://images.unsplash.com/photo-1529390079861-591de354faf5">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+💬 A Importância de Ouvir o Outro
+</h1>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1543269865-cbf427effbad">
+
+
+<h2>Escuta Ativa</h2>
+
+<p>
+Ouvir verdadeiramente significa prestar atenção,
+compreender emoções e respeitar aquilo que o outro
+está tentando comunicar.
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+
+
+<h2>Diálogo</h2>
+
+<p>
+Conversas abertas e respeitosas ajudam a resolver
+diferenças e fortalecem os relacionamentos.
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+
+
+<h2>Confiança</h2>
+
+<p>
+A confiança cresce quando as pessoas sentem que são
+valorizadas e respeitadas.
+</p>
+
+
+</div>
+
+
 
 </div>
 
@@ -2245,35 +668,850 @@ Juntos construímos conexões que transformam vidas
 
 
 
-<!-- ===================================================== -->
-<!-- ENCERRAMENTO VISUAL -->
-<!-- ===================================================== -->
+
+
+
+
+<div class="citacao">
+
+"Conectar-se com alguém é reconhecer que,
+mesmo sendo diferentes, compartilhamos a mesma humanidade."
+
+</div>
+
+
+
+
+
+
 
 <section>
 
+
+<h1 class="titulo">
+🌱 Construindo Comunidades Melhores
+</h1>
+
+
+<div class="texto">
+
+
+<p>
+Comunidades fortes são formadas por pessoas que colaboram,
+compartilham conhecimentos e cuidam umas das outras.
+Cada ação positiva contribui para um ambiente mais seguro,
+acolhedor e saudável.
+</p>
+
+
+<br>
+
+
+<p>
+A cooperação aparece em escolas, famílias, empresas,
+projetos sociais e em todos os lugares onde pessoas se unem
+por um objetivo comum.
+</p>
+
+
+</div>
+
+
+<br>
+
+
+<div class="galeria">
+
+
+<img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d">
+
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+
+
+<img src="https://images.unsplash.com/photo-1556761175-4b46a572b786">
+
+
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+🚀 Atitudes Para Transformar o Mundo
+</h1>
+
+
+<div class="lista">
+
+<ul>
+
+<li>
+🌱 Preservar o meio ambiente pensando nas próximas gerações.
+</li>
+
+<li>
+🤝 Participar de ações voluntárias.
+</li>
+
+<li>
+📚 Compartilhar conhecimento com outras pessoas.
+</li>
+
+<li>
+❤️ Tratar todos com dignidade e respeito.
+</li>
+
+<li>
+🌈 Combater preconceitos e incentivar a inclusão.
+</li>
+
+<li>
+💡 Criar soluções coletivas para problemas comuns.
+</li>
+
+<li>
+😊 Espalhar mensagens positivas diariamente.
+</li>
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+
+<h1 class="titulo">
+✨ Uma Mensagem Para o Futuro
+</h1>
+
+
+<div class="texto">
+
+
+<p>
+A humanidade sempre avançou quando pessoas decidiram
+trabalhar juntas. Grandes mudanças nasceram de pequenos
+gestos de coragem, respeito e colaboração.
+</p>
+
+
+<br>
+
+
+<p>
+Cada pessoa tem a capacidade de criar conexões,
+inspirar outras pessoas e participar da construção de
+um mundo onde a empatia seja uma escolha diária.
+</p>
+
+
+<br>
+
+
+<p>
+O futuro será mais humano quando aprendermos que
+cooperar não significa perder espaço, mas criar
+possibilidades para todos.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+🌟 Galeria Final: A Força das Pessoas
+</h1>
+
+
+<div class="galeria">
+
+
+<img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70">
+
+
+<img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205">
+
+
+<img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce">
+
+
+<img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a">
+
+
+<img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc">
+
+
+<img src="https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba">
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- CONTINUAÇÃO EXTRA -->
+
+<section>
+
+<h1 class="titulo">
+🕊️ A Empatia Como Linguagem Universal
+</h1>
+
+
+<div class="texto">
+
+<p>
+A empatia ultrapassa fronteiras, idiomas e culturas.
+Ela é uma linguagem que todas as pessoas conseguem
+compreender através de atitudes de respeito, cuidado
+e solidariedade.
+</p>
+
+<br>
+
+<p>
+Mesmo pequenos gestos podem criar grandes impactos:
+ajudar alguém em dificuldade, oferecer apoio em momentos
+difíceis ou simplesmente ouvir uma história com atenção.
+</p>
+
+<br>
+
+<p>
+Quando escolhemos compreender antes de julgar,
+criamos relações mais saudáveis e uma sociedade mais humana.
+</p>
+
+</div>
+
+
+<br>
+
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1511895426328-dc8714191300">
+
+<img src="https://images.unsplash.com/photo-1520857014576-2c4f4c972b57">
+
+<img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+🌈 Diferentes Histórias, Um Mesmo Mundo
+</h1>
+
+
+<div class="cards">
+
+
 <div class="card">
 
-<h2>Uma Reflexão Final</h2>
+<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7">
+
+
+<h2>Respeitar Histórias</h2>
 
 <p>
-
-As imagens desta galeria representam algo que vai além da aparência:
-representam momentos de encontro, cuidado e colaboração.
-
+Cada pessoa carrega experiências, desafios e sonhos.
+Conhecer essas histórias aumenta nossa capacidade
+de compreender o próximo.
 </p>
 
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac">
+
+
+<h2>Criar Laços</h2>
+
 <p>
-
-Cada pessoa carrega experiências diferentes, mas todos compartilhamos a
-necessidade de sermos compreendidos, respeitados e valorizados.
-
+Relacionamentos verdadeiros são construídos com
+confiança, diálogo e momentos compartilhados.
 </p>
 
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1533105079780-92b9be482077">
+
+
+<h2>Celebrar Diferenças</h2>
+
 <p>
+As diferenças tornam a humanidade mais rica,
+criativa e cheia de possibilidades.
+</p>
 
-A empatia cria compreensão. A cooperação cria possibilidades. A conexão humana
-cria significado.
+</div>
 
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+🏫 Empatia na Escola e na Educação
+</h1>
+
+
+<div class="texto">
+
+<p>
+A educação vai além dos livros. Ela também ensina valores,
+como respeito, cooperação e responsabilidade.
+</p>
+
+<br>
+
+<p>
+Ambientes escolares onde existe empatia ajudam estudantes
+a desenvolver habilidades sociais, aprender a trabalhar
+em equipe e respeitar opiniões diferentes.
+</p>
+
+
+<br>
+
+<p>
+Professores e alunos podem construir juntos espaços onde
+todos tenham voz e oportunidade de aprender.
+</p>
+
+
+</div>
+
+
+<br>
+
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+
+<img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45">
+
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<div class="citacao">
+
+"Cada pessoa que encontramos está enfrentando uma batalha
+que nem sempre conseguimos enxergar. Por isso, escolha a
+gentileza."
+
+</div>
+
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+🌍 Cooperação Para Resolver Desafios
+</h1>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b">
+
+
+<h2>Problemas Globais</h2>
+
+<p>
+Questões como pobreza, mudanças climáticas e desigualdade
+exigem união entre pessoas e comunidades.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a">
+
+
+<h2>Ações Coletivas</h2>
+
+<p>
+Quando pessoas trabalham juntas, ideias transformam-se
+em projetos capazes de gerar mudanças.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1559027615-0286c4f7e3b2">
+
+
+<h2>Esperança</h2>
+
+<p>
+A cooperação mostra que soluções são possíveis quando
+existe vontade de construir um futuro melhor.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+💖 Exercícios Diários de Humanidade
+</h1>
+
+
+<div class="lista">
+
+
+<ul>
+
+<li>
+☀️ Cumprimentar as pessoas com respeito.
+</li>
+
+<li>
+👂 Ouvir alguém sem interromper.
+</li>
+
+<li>
+🤲 Oferecer ajuda quando perceber uma necessidade.
+</li>
+
+<li>
+🌱 Incentivar atitudes positivas.
+</li>
+
+<li>
+📖 Aprender com pessoas diferentes.
+</li>
+
+<li>
+💬 Resolver conflitos através da conversa.
+</li>
+
+<li>
+🌎 Pensar no impacto das nossas escolhas.
+</li>
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+🌟 O Poder de Uma Rede Humana
+</h1>
+
+
+<div class="texto">
+
+
+<p>
+Nenhuma grande transformação acontece completamente
+sozinha. A humanidade evolui através da colaboração
+entre pessoas que compartilham conhecimentos, sonhos
+e objetivos.
+</p>
+
+
+<br>
+
+
+<p>
+Uma rede humana forte é formada por indivíduos que
+se apoiam, aprendem juntos e acreditam que todos têm
+algo importante para oferecer.
+</p>
+
+
+<br>
+
+
+<p>
+Cada conexão criada é uma oportunidade de espalhar
+respeito, compreensão e esperança.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+<h1 class="titulo">
+📷 Retratos da Conexão Humana
+</h1>
+
+
+<div class="galeria">
+
+
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac">
+
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+
+<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">
+
+
+<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998">
+
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+
+<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18">
+
+
+</div>
+
+
+</section>
+
+
+
+<section>
+
+<h1 class="titulo">
+🌍 A Jornada da Conexão Humana
+</h1>
+
+
+<div class="texto">
+
+
+<h2 style="color:#e91e63; margin-bottom:20px;">
+O encontro entre pessoas transforma o mundo
+</h2>
+
+
+<p>
+Desde os primeiros momentos da história da humanidade,
+as pessoas aprenderam que viver em grupo era essencial
+para sobreviver, criar conhecimento e construir novas
+possibilidades. A conexão entre indivíduos permitiu que
+sociedades fossem formadas, culturas fossem compartilhadas
+e grandes descobertas fossem realizadas.
+</p>
+
+
+<br>
+
+
+<p>
+A empatia surgiu como uma das maiores capacidades humanas:
+a habilidade de perceber sentimentos, compreender desafios
+e reconhecer que cada pessoa possui uma história única.
+Quando desenvolvemos empatia, deixamos de olhar apenas
+para nós mesmos e começamos a enxergar o mundo através
+das experiências dos outros.
+</p>
+
+
+<br>
+
+
+<p>
+Em uma sociedade cada vez mais conectada pela tecnologia,
+a verdadeira conexão humana continua sendo fundamental.
+Mensagens, redes sociais e ferramentas digitais aproximam
+pessoas de diferentes lugares, mas são o respeito, a atenção
+e o cuidado que criam vínculos verdadeiros.
+</p>
+
+
+<br>
+
+
+<h2 style="color:#6a1b9a;">
+A força de cooperar
+</h2>
+
+
+<p>
+A cooperação representa a união de esforços em busca de
+um objetivo comum. Quando pessoas trabalham juntas,
+elas conseguem transformar ideias simples em grandes
+projetos capazes de melhorar comunidades inteiras.
+</p>
+
+
+<br>
+
+
+<p>
+Cooperar não significa pensar exatamente da mesma forma.
+Na verdade, a verdadeira colaboração acontece quando
+diferentes opiniões, conhecimentos e habilidades se unem
+para encontrar soluções melhores.
+</p>
+
+
+<br>
+
+
+<h2 style="color:#00897b;">
+Construindo pontes entre diferenças
+</h2>
+
+
+<p>
+Cada pessoa possui sua própria maneira de enxergar o mundo.
+Existem diferenças de cultura, idade, experiências e formas
+de pensar. Essas diferenças não precisam separar as pessoas;
+elas podem ser caminhos para aprender e crescer.
+</p>
+
+
+<br>
+
+
+<p>
+Uma sociedade mais humana é construída quando escolhemos
+respeitar aquilo que é diferente. O diálogo permite que
+conflitos sejam transformados em aprendizado e que novas
+relações sejam criadas através da compreensão.
+</p>
+
+
+<br>
+
+
+<h2 style="color:#ff6f00;">
+Pequenas atitudes que geram grandes mudanças
+</h2>
+
+
+<p>
+Muitas vezes imaginamos que transformar o mundo exige
+grandes ações, mas mudanças importantes também começam
+com pequenos gestos. Um ato de gentileza, uma palavra
+de incentivo ou um momento dedicado a ouvir alguém podem
+fazer uma grande diferença.
+</p>
+
+
+<br>
+
+
+<p>
+A humanidade cresce quando cada pessoa assume a
+responsabilidade de espalhar respeito, solidariedade e
+compaixão. As escolhas que fazemos diariamente ajudam a
+criar o ambiente em que todos viverão.
+</p>
+
+
+<br>
+
+
+<h2 style="color:#1565c0;">
+O futuro depende das nossas conexões
+</h2>
+
+
+<p>
+O futuro da humanidade será construído pelas relações que
+criamos hoje. A tecnologia continuará evoluindo, novas
+descobertas serão feitas e o mundo continuará mudando,
+mas os valores humanos permanecerão essenciais.
+</p>
+
+
+<br>
+
+
+<p>
+Empatia, cooperação e conexão são elementos que ajudam
+a construir uma sociedade mais equilibrada, onde cada
+pessoa possa ser respeitada, ouvida e valorizada.
+</p>
+
+
+<br>
+
+
+<p>
+Quando aprendemos a cuidar uns dos outros, percebemos que
+todos fazemos parte de uma grande rede humana. Cada ação
+positiva fortalece essa rede e aproxima pessoas de um
+propósito maior: viver em um mundo com mais compreensão,
+união e esperança.
+</p>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="citacao">
+
+"Ser humano é reconhecer que nossas histórias são diferentes,
+mas nossos sentimentos nos conectam."
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h1 class="titulo">
+✨ Reflexão Final
+</h1>
+
+
+<div class="texto">
+
+<p>
+A empatia nos ensina a compreender.
+</p>
+
+<br>
+
+<p>
+A cooperação nos ensina a construir juntos.
+</p>
+
+<br>
+
+<p>
+A conexão humana nos lembra que ninguém caminha sozinho.
+</p>
+
+<br>
+
+<p>
+Cada pessoa tem o poder de criar mudanças positivas.
+Um gesto de respeito pode inspirar outro gesto, que pode
+inspirar uma comunidade inteira.
 </p>
 
 </div>
