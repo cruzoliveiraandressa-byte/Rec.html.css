@@ -3,72 +3,232 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teen Wolf - Guia Completo</title>
+
+<title>Empatia, Cooperação e Conexão Humana</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    background:#111;
-    color:white;
-    font-family:Arial,Helvetica,sans-serif;
-    line-height:1.7;
+
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f7f8;
+color:#333;
+line-height:1.8;
+
 }
 
 header{
-    background:linear-gradient(90deg,#550000,#111);
-    padding:40px;
-    text-align:center;
+
+background:linear-gradient(135deg,#1e88e5,#26a69a);
+
+color:white;
+
+padding:70px 20px;
+
+text-align:center;
+
 }
 
 header h1{
-    font-size:55px;
-    margin:0;
+
+font-size:60px;
+
+margin-bottom:20px;
+
 }
 
 header p{
-    font-size:20px;
+
+font-size:22px;
+
+max-width:900px;
+
+margin:auto;
+
 }
 
 nav{
-    background:#222;
-    padding:15px;
-    text-align:center;
+
+background:#1565c0;
+
+padding:15px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+nav ul{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+list-style:none;
+
+}
+
+nav li{
+
+margin:10px 15px;
+
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:20px;
-    font-weight:bold;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ffee58;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+padding:40px;
+
 }
 
 section{
-    max-width:1200px;
-    margin:auto;
-    padding:40px;
+
+margin-bottom:80px;
+
 }
 
 h2{
-    color:#ff4444;
-    border-bottom:2px solid #ff4444;
-    padding-bottom:10px;
+
+font-size:38px;
+
+color:#1565c0;
+
+margin-bottom:20px;
+
+border-left:8px solid #26a69a;
+
+padding-left:15px;
+
+}
+
+h3{
+
+margin-top:30px;
+
+color:#00897b;
+
 }
 
 .card{
 
-background:#1b1b1b;
-padding:25px;
+background:white;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+margin-top:25px;
+
+}
+
+.highlight{
+
+background:#e8f5e9;
+
+padding:20px;
+
+border-left:8px solid #43a047;
+
 margin:25px 0;
+
+border-radius:8px;
+
+}
+
+.quote{
+
+font-style:italic;
+
+font-size:22px;
+
+padding:25px;
+
+background:#fff8e1;
+
+border-left:8px solid orange;
+
+margin-top:25px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+.box{
+
+background:white;
+
+padding:25px;
+
 border-radius:10px;
-box-shadow:0 0 15px rgba(255,0,0,.2);
+
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.box:hover{
+
+transform:translateY(-8px);
 
 }
 
 footer{
-background:#000;
-padding:30px;
+
+background:#0d47a1;
+
+color:white;
+
+padding:40px;
+
 text-align:center;
+
+margin-top:80px;
+
 }
 
 </style>
@@ -79,41 +239,82 @@ text-align:center;
 
 <header>
 
-<h1>TEEN WOLF</h1>
+<h1>Empatia, Cooperação e Conexão Humana</h1>
 
-<p>Guia Completo da Série</p>
+<p>
+
+Uma jornada pelo poder da compreensão, do respeito e da colaboração.
+Este guia apresenta conceitos, exemplos e reflexões sobre como as relações
+humanas podem transformar indivíduos, famílias, comunidades e sociedades.
+
+</p>
 
 </header>
 
 <nav>
 
-<a href="#historia">História</a>
+<ul>
 
-<a href="#temporadas">Temporadas</a>
+<li><a href="#introducao">Introdução</a></li>
 
-<a href="#personagens">Personagens</a>
+<li><a href="#empatia">Empatia</a></li>
 
-<a href="#viloes">Vilões</a>
+<li><a href="#cooperacao">Cooperação</a></li>
 
-<a href="#criaturas">Criaturas</a>
+<li><a href="#conexao">Conexão Humana</a></li>
+
+<li><a href="#beneficios">Benefícios</a></li>
+
+</ul>
 
 </nav>
 
-<section id="historia">
+<div class="container">
 
-<h2>História</h2>
+<section id="introducao">
+
+<h2>Introdução</h2>
 
 <div class="card">
 
 <p>
 
-Teen Wolf acompanha Scott McCall, um estudante comum que vive na cidade de Beacon Hills.
+Os seres humanos são naturalmente sociais. Desde o nascimento,
+dependemos de outras pessoas para sobreviver, aprender e crescer.
+Nossa capacidade de criar vínculos permitiu o desenvolvimento de famílias,
+aldeias, cidades e civilizações inteiras.
 
-Depois de ser mordido por um lobisomem, sua vida muda completamente.
+</p>
 
-Enquanto tenta controlar seus novos poderes, Scott precisa proteger seus amigos,
+<p>
 
-sua família e toda a cidade de criaturas sobrenaturais.
+Ao longo da história, grandes conquistas foram possíveis porque pessoas
+compartilharam conhecimentos, trabalharam juntas e confiaram umas nas outras.
+A ciência, a arte, a tecnologia e a cultura floresceram graças à cooperação.
+
+</p>
+
+<p>
+
+Neste contexto, três elementos desempenham papel fundamental:
+
+</p>
+
+<ul>
+
+<li>Empatia</li>
+
+<li>Cooperação</li>
+
+<li>Conexão Humana</li>
+
+</ul>
+
+<p>
+
+Esses pilares fortalecem relacionamentos, reduzem conflitos,
+favorecem o aprendizado coletivo e ajudam a construir ambientes
+mais saudáveis e acolhedores.
 
 </p>
 
@@ -121,295 +322,273 @@ sua família e toda a cidade de criaturas sobrenaturais.
 
 </section>
 
-<section id="temporadas">
+<section id="empatia">
 
-<h2>Temporadas</h2>
+<h2>O que é Empatia?</h2>
 
 <div class="card">
 
-<h3>Temporada 1</h3>
+<p>
 
-<p>Scott aprende a controlar seus poderes e enfrenta Peter Hale.</p>
+Empatia é a capacidade de compreender ou tentar compreender
+como outra pessoa percebe uma situação, considerando seus sentimentos,
+experiências e contexto. Ela não exige concordar com tudo o que o outro pensa,
+mas envolve reconhecer que diferentes pessoas podem viver a mesma situação de
+formas distintas.
+
+</p>
+
+<p>
+
+Ao praticar a empatia, criamos espaço para conversas mais respeitosas,
+reduzimos julgamentos precipitados e fortalecemos relações de confiança.
+
+</p>
 
 </div>
 
-<div class="card">
+<div class="highlight">
 
-<h3>Temporada 2</h3>
-
-<p>O Kanima aterroriza Beacon Hills enquanto Gerard Argent inicia seus planos.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Temporada 3A</h3>
-
-<p>A Alcateia Alpha invade Beacon Hills.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Temporada 3B</h3>
-
-<p>Os Oni e o Nogitsune colocam todos em perigo.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Temporada 4</h3>
-
-<p>O Benefactor cria uma lista de recompensas para eliminar seres sobrenaturais.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Temporada 5</h3>
-
-<p>Os Doutores do Medo realizam experimentos assustadores.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Temporada 6</h3>
-
-<p>Os Ghost Riders apagam pessoas da existência e depois surge a guerra contra Anuk-Ite.</p>
-
-</div>
-
-</section>
-
-<section id="personagens">
-
-<h2>Personagens Principais</h2>
-
-<div class="card">
-
-<h3>Scott McCall</h3>
-
-<p>O protagonista da série. Um Lobisomem Verdadeiro (True Alpha), conhecido por sua liderança e compaixão.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Stiles Stilinski</h3>
-
-<p>Melhor amigo de Scott. Inteligente, engraçado e um dos personagens mais queridos da série.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Lydia Martin</h3>
-
-<p>Inicialmente vista apenas como popular, descobre ser uma Banshee com poderes extraordinários.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Allison Argent</h3>
-
-<p>Caçadora pertencente à família Argent. Vive um romance com Scott.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Derek Hale</h3>
-
-<p>Um dos lobisomens mais importantes da série. Membro da família Hale.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Malia Tate</h3>
-
-<p>Uma Coiote Humana que aprende a viver novamente em sociedade.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Kira Yukimura</h3>
-
-<p>Descendente de Kitsunes e portadora de uma poderosa espada espiritual.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Liam Dunbar</h3>
-
-<p>Primeiro Beta de Scott e seu sucessor como líder da nova geração.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Chris Argent</h3>
-
-<p>Caçador experiente que se torna aliado de Scott.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Noah Stilinski</h3>
-
-<p>Xerife de Beacon Hills e pai de Stiles.</p>
-
-</div>
-
-</section>
-
-<section id="viloes">
-
-<h2>Principais Vilões</h2>
-
-<div class="card">
-
-<h3>Peter Hale</h3>
-
-<p>Principal antagonista da primeira temporada.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Gerard Argent</h3>
-
-<p>Caçador extremamente manipulador.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Kanima</h3>
-
-<p>Criatura reptiliana controlada por um mestre.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Deucalion</h3>
-
-<p>Líder da Alcateia Alpha.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Nogitsune</h3>
-
-<p>Espírito maligno que possui Stiles.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Kate Argent</h3>
-
-<p>Retorna transformada em Werejaguar.</p>
-
-</div>
-
-<div class="card">
-
-<h3>The Benefactor</h3>
-
-<p>Responsável pela lista de recompensas contra criaturas sobrenaturais.</p>
-
-</div>
-
-<div class="card">
-
-<h3>The Dread Doctors</h3>
-
-<p>Cientistas sobrenaturais responsáveis por experimentos monstruosos.</p>
-
-</div>
-
-<div class="card">
-
-<h3>The Beast of Gévaudan</h3>
-
-<p>Uma das criaturas mais poderosas da série.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Ghost Riders</h3>
-
-<p>Apagam pessoas da existência e as levam para a Caçada Selvagem.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Anuk-Ite</h3>
-
-<p>Entidade que transforma pessoas em pedra através do medo.</p>
-
-</div>
-
-</section>
-
-<section id="criaturas">
-
-<h2>Criaturas Sobrenaturais</h2>
-
-<div class="card">
+<strong>Empatia significa:</strong>
 
 <ul>
 
-<li>Lobisomens</li>
+<li>Ouvir antes de responder.</li>
 
-<li>True Alpha</li>
+<li>Demonstrar respeito.</li>
 
-<li>Alpha</li>
+<li>Buscar compreender diferentes perspectivas.</li>
 
-<li>Beta</li>
+<li>Valorizar a dignidade de cada pessoa.</li>
 
-<li>Omega</li>
-
-<li>Banshee</li>
-
-<li>Kitsune</li>
-
-<li>Kanima</li>
-
-<li>Werejaguar</li>
-
-<li>Hellhound</li>
-
-<li>Ghost Riders</li>
-
-<li>Nogitsune</li>
-
-<li>Oni</li>
-
-<li>Druids</li>
-
-<li>Darach</li>
-
-<li>Chimera</li>
-
-<li>Skinwalkers</li>
-
-<li>Wendigo</li>
-
-<li>Berserkers</li>
+<li>Reconhecer emoções sem desmerecê-las.</li>
 
 </ul>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Escutar</h3>
+
+<p>
+
+Ouvir com atenção permite compreender melhor as necessidades,
+expectativas e preocupações de outra pessoa.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Observar</h3>
+
+<p>
+
+Expressões faciais, postura e tom de voz também comunicam informações
+importantes além das palavras.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Compreender</h3>
+
+<p>
+
+Buscar entender o contexto ajuda a evitar conclusões precipitadas
+e favorece respostas mais cuidadosas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="cooperacao">
+
+<h2>O Poder da Cooperação</h2>
+
+<div class="card">
+
+<p>
+
+Cooperar significa trabalhar em conjunto para alcançar um objetivo comum.
+Em vez de agir isoladamente, as pessoas unem conhecimentos,
+habilidades e esforços para resolver desafios.
+
+</p>
+
+<p>
+
+A cooperação está presente em diferentes contextos:
+na família, na escola, no ambiente de trabalho,
+na ciência, no esporte e em ações comunitárias.
+
+</p>
+
+<p>
+
+Projetos colaborativos costumam reunir perspectivas diversas,
+o que pode ampliar a criatividade e melhorar a qualidade das soluções.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Família</h3>
+
+<p>
+
+Dividir tarefas domésticas,
+ouvir uns aos outros
+e apoiar momentos difíceis fortalece os vínculos familiares.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Escola</h3>
+
+<p>
+
+Trabalhos em grupo incentivam diálogo,
+resolução de problemas
+e aprendizagem compartilhada.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Comunidade</h3>
+
+<p>
+
+Ações coletivas como mutirões,
+campanhas solidárias e projetos sociais
+mostram a força da colaboração.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="conexao">
+
+<h2>Conexão Humana</h2>
+
+<div class="card">
+
+<p>
+
+Conexão humana refere-se ao sentimento de pertencimento,
+confiança e proximidade construído entre pessoas.
+
+</p>
+
+<p>
+
+Ela pode surgir em amizades,
+famílias,
+equipes,
+comunidades
+e até em encontros breves marcados por respeito e atenção.
+
+</p>
+
+<p>
+
+Relacionamentos baseados em confiança costumam favorecer diálogo,
+cooperação e apoio mútuo diante de desafios.
+
+</p>
+
+</div>
+
+<div class="quote">
+
+"A conexão humana nasce quando alguém se sente ouvido, respeitado e valorizado."
+
+</div>
+
+</section>
+
+<section id="beneficios">
+
+<h2>Benefícios da Empatia e Cooperação</h2>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Relacionamentos</h3>
+
+<p>
+
+Fortalecem amizades,
+famílias e equipes.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Saúde Mental</h3>
+
+<p>
+
+Ambientes acolhedores podem contribuir para redução do estresse
+e aumento da sensação de apoio social.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Aprendizagem</h3>
+
+<p>
+
+A troca de experiências amplia conhecimentos
+e favorece o desenvolvimento coletivo.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Sociedade</h3>
+
+<p>
+
+A colaboração fortalece comunidades,
+estimula iniciativas solidárias
+e incentiva soluções compartilhadas.
+
+</p>
+
+</div>
 
 </div>
 
@@ -417,231 +596,143 @@ sua família e toda a cidade de criaturas sobrenaturais.
 
 <footer>
 
-<h2>Teen Wolf</h2>
+<h2>Empatia • Cooperação • Conexão Humana</h2>
 
-                                                <!-- ========================================= -->
-<!-- PERSONAGENS SECUNDÁRIOS -->
-<!-- ========================================= -->
+<p>
 
-<section id="secundarios">
+Parte 1 — Introdução e Fundamentos.
 
-<h2>Personagens Secundários</h2>
+</p>
+
+<p>
+
+Continua na Parte 2 com os tipos de empatia,
+inteligência emocional,
+escuta ativa,
+comunicação não violenta
+e exemplos práticos do cotidiano.
+
+</p>
+
+</footer>
+
+</body>
+</html>
+
+
+ <!-- ===================================================== -->
+<!-- PARTE 2 - CONTINUAÇÃO -->
+<!-- Cole este trecho antes da tag </footer> ou </body> -->
+<!-- ===================================================== -->
+
+<section id="tipos-empatia">
+
+<h2>Os Diferentes Tipos de Empatia</h2>
 
 <div class="card">
-<h3>Melissa McCall</h3>
+
 <p>
-Melissa é mãe de Scott McCall e enfermeira do Hospital Memorial de Beacon Hills.
-Mesmo sem conhecer inicialmente o mundo sobrenatural, sempre protege seu filho.
-Após descobrir a verdade, torna-se uma importante aliada da alcateia.
+
+Embora muitas vezes utilizemos apenas a palavra "empatia", pesquisadores e
+educadores costumam descrever diferentes formas pelas quais ela pode se
+manifestar. Essas formas trabalham juntas e ajudam as pessoas a compreender,
+respeitar e apoiar umas às outras.
+
 </p>
+
 </div>
 
-<div class="card">
-<h3>Deaton</h3>
+<div class="grid">
+
+<div class="box">
+
+<h3>Empatia Cognitiva</h3>
+
 <p>
-Alan Deaton é veterinário e um Druida muito poderoso.
-Ele atua como mentor de Scott e possui vasto conhecimento sobre magia,
-rituais e criaturas sobrenaturais.
+
+É a capacidade de compreender como outra pessoa enxerga uma situação.
+Envolve perceber diferentes pontos de vista e considerar que experiências
+distintas levam a interpretações diferentes.
+
 </p>
+
 </div>
 
-<div class="card">
-<h3>Isaac Lahey</h3>
+<div class="box">
+
+<h3>Empatia Emocional</h3>
+
 <p>
-Isaac sofreu abusos do pai durante a infância.
-Após ser transformado por Derek Hale em lobisomem,
-passa a integrar a alcateia de Scott.
+
+Relaciona-se ao reconhecimento das emoções do outro. Ao perceber que alguém
+está feliz, triste, preocupado ou frustrado, podemos responder de forma mais
+cuidadosa e respeitosa.
+
 </p>
+
 </div>
 
-<div class="card">
-<h3>Erica Reyes</h3>
+<div class="box">
+
+<h3>Empatia Compassiva</h3>
+
 <p>
-Antes da transformação sofria de epilepsia.
-Ao tornar-se lobisomem ganha confiança e velocidade,
-integrando a alcateia de Derek Hale.
+
+Além de compreender, surge o desejo de oferecer apoio quando possível,
+respeitando os limites e a autonomia da outra pessoa.
+
 </p>
+
 </div>
 
-<div class="card">
-<h3>Boyd</h3>
-<p>
-Vernon Boyd era extremamente reservado.
-Após ser mordido por Derek Hale, torna-se um Beta poderoso.
-Sua amizade com Erica é um dos destaques da série.
-</p>
-</div>
-
-<div class="card">
-<h3>Cora Hale</h3>
-<p>
-Filha da família Hale e irmã de Derek.
-Foi dada como morta no incêndio,
-mas reaparece na terceira temporada.
-</p>
-</div>
-
-<div class="card">
-<h3>Jennifer Blake</h3>
-<p>
-Professora da escola de Beacon Hills.
-Na verdade, era a Darach,
-uma poderosa feiticeira responsável por diversos sacrifícios.
-</p>
-</div>
-
-<div class="card">
-<h3>Braeden</h3>
-<p>
-Mercenária extremamente habilidosa.
-Posteriormente torna-se aliada de Derek Hale
-e ajuda a combater diversas ameaças.
-</p>
-</div>
-
-<div class="card">
-<h3>Mason Hewitt</h3>
-<p>
-Melhor amigo de Liam Dunbar.
-Muito inteligente e curioso,
-acaba se envolvendo diretamente nos acontecimentos sobrenaturais.
-</p>
-</div>
-
-<div class="card">
-<h3>Corey Bryant</h3>
-<p>
-Quimera criada pelos Doutores do Medo.
-Possui a habilidade de ficar invisível.
-</p>
-</div>
-
-<div class="card">
-<h3>Hayden Romero</h3>
-<p>
-Namorada de Liam Dunbar.
-Também é uma Quimera criada pelos Doutores do Medo.
-</p>
-</div>
-
-<div class="card">
-<h3>Theo Raeken</h3>
-<p>
-Velho conhecido de Scott.
-Retorna anos depois escondendo sua verdadeira identidade.
-Foi transformado em uma Quimera extremamente poderosa.
-</p>
-</div>
-
-<div class="card">
-<h3>Parrish</h3>
-<p>
-Jordan Parrish é um policial recém-chegado à cidade.
-Mais tarde descobre-se que ele é um Hellhound,
-criatura ligada ao fogo sobrenatural.
-</p>
-</div>
-
-<div class="card">
-<h3>Ethan</h3>
-<p>
-Membro da Alcateia Alpha.
-Após abandonar Deucalion,
-torna-se aliado de Scott.
-</p>
-</div>
-
-<div class="card">
-<h3>Aiden</h3>
-<p>
-Irmão gêmeo de Ethan.
-Inicialmente antagonista,
-mais tarde ajuda Scott durante a batalha contra o Nogitsune.
-</p>
-</div>
-
-<div class="card">
-<h3>Danny Mahealani</h3>
-<p>
-Colega de escola de Scott.
-Excelente programador e um dos estudantes mais inteligentes da série.
-</p>
-</div>
-
-<div class="card">
-<h3>Natalie Martin</h3>
-<p>
-Mãe de Lydia Martin.
-Após descobrir a verdade sobre Beacon Hills,
-passa a ajudar sua filha.
-</p>
-</div>
-
-<div class="card">
-<h3>Victoria Argent</h3>
-<p>
-Mãe de Allison Argent.
-Era uma caçadora extremamente disciplinada.
-</p>
-</div>
-
-<div class="card">
-<h3>Satomi Ito</h3>
-<p>
-Uma Alpha muito antiga.
-Defendia a convivência pacífica entre humanos e lobisomens.
-</p>
-</div>
-
-<div class="card">
-<h3>Talia Hale</h3>
-<p>
-Antiga Alpha da família Hale.
-Era considerada uma das lobisomens mais fortes já vistas.
-</p>
 </div>
 
 </section>
 
-<!-- ========================================= -->
-<!-- ALCATEIA DE SCOTT -->
-<!-- ========================================= -->
+<!-- ===================================================== -->
 
-<section>
+<section id="emocional">
 
-<h2>A Alcateia de Scott</h2>
+<h2>Inteligência Emocional</h2>
 
 <div class="card">
 
+<p>
+
+A inteligência emocional envolve reconhecer, compreender e administrar as
+próprias emoções, além de lidar de forma equilibrada com as emoções dos
+outros.
+
+</p>
+
+<p>
+
+Ela não significa esconder sentimentos, mas aprender a expressá-los de maneira
+construtiva.
+
+</p>
+
+</div>
+
+<div class="highlight">
+
+<strong>Algumas habilidades importantes:</strong>
+
 <ul>
 
-<li>Scott McCall (True Alpha)</li>
+<li>Autoconhecimento.</li>
 
-<li>Stiles Stilinski</li>
+<li>Autocontrole.</li>
 
-<li>Lydia Martin</li>
+<li>Empatia.</li>
 
-<li>Malia Tate</li>
+<li>Respeito nas conversas.</li>
 
-<li>Kira Yukimura</li>
+<li>Capacidade de colaborar.</li>
 
-<li>Liam Dunbar</li>
+<li>Resolução de conflitos.</li>
 
-<li>Isaac Lahey</li>
-
-<li>Mason Hewitt</li>
-
-<li>Corey Bryant</li>
-
-<li>Jordan Parrish</li>
-
-<li>Chris Argent</li>
-
-<li>Melissa McCall</li>
-
-<li>Alan Deaton</li>
-
-<li>Sheriff Stilinski</li>
+<li>Comunicação clara.</li>
 
 </ul>
 
@@ -649,29 +740,659 @@ Era considerada uma das lobisomens mais fortes já vistas.
 
 </section>
 
-<!-- ========================================= -->
-<!-- FAMÍLIA HALE -->
-<!-- ========================================= -->
+<!-- ===================================================== -->
 
-<section>
+<section id="escuta">
 
-<h2>Família Hale</h2>
+<h2>Escuta Ativa</h2>
 
 <div class="card">
 
+<p>
+
+Escutar ativamente significa prestar atenção ao que a outra pessoa está
+dizendo sem interromper constantemente, demonstrando interesse genuíno pela
+conversa.
+
+</p>
+
+<p>
+
+Uma boa escuta favorece relações de confiança e reduz mal-entendidos.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Olhe com atenção</h3>
+
+<p>
+
+Manter contato visual quando apropriado demonstra interesse e respeito.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Evite interrupções</h3>
+
+<p>
+
+Permitir que a outra pessoa conclua seu raciocínio torna a conversa mais
+produtiva.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Faça perguntas</h3>
+
+<p>
+
+Perguntas respeitosas ajudam a compreender melhor a situação apresentada.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Confirme o entendimento</h3>
+
+<p>
+
+Repetir com suas próprias palavras o que foi compreendido pode evitar
+interpretações equivocadas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="cnv">
+
+<h2>Comunicação Não Violenta</h2>
+
+<div class="card">
+
+<p>
+
+A Comunicação Não Violenta (CNV) propõe uma forma de diálogo baseada no
+respeito, na observação dos fatos, na identificação de sentimentos e na
+expressão clara das necessidades e dos pedidos.
+
+</p>
+
+<p>
+
+Seu objetivo é fortalecer relações e favorecer soluções construídas em
+conjunto, reduzindo acusações e julgamentos.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>1. Observe</h3>
+
+<p>
+
+Descreva os fatos sem exageros ou ataques pessoais.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>2. Reconheça sentimentos</h3>
+
+<p>
+
+Identifique como você se sente diante da situação.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>3. Identifique necessidades</h3>
+
+<p>
+
+Procure compreender quais necessidades estão relacionadas ao problema.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>4. Faça pedidos claros</h3>
+
+<p>
+
+Expresse de maneira respeitosa o que gostaria que acontecesse.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="cotidiano">
+
+<h2>Empatia no Cotidiano</h2>
+
+<div class="card">
+
+<p>
+
+Pequenas atitudes podem contribuir para relações mais respeitosas e
+cooperativas. Nem sempre são necessárias grandes ações; gestos simples podem
+fazer diferença no dia a dia.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Na Escola</h3>
+
+<p>
+
+Ajudar colegas em atividades, respeitar opiniões diferentes e incentivar o
+trabalho em equipe.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Na Família</h3>
+
+<p>
+
+Compartilhar responsabilidades, conversar com respeito e apoiar uns aos
+outros em momentos difíceis.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>No Trabalho</h3>
+
+<p>
+
+Valorizar a colaboração, ouvir ideias diferentes e reconhecer o esforço das
+pessoas.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Na Comunidade</h3>
+
+<p>
+
+Participar de ações voluntárias, cuidar dos espaços públicos e colaborar com
+projetos sociais.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="barreiras">
+
+<h2>Barreiras para a Empatia</h2>
+
+<div class="card">
+
+<p>
+
+Diversos fatores podem dificultar a construção de relações empáticas. Entre
+eles estão julgamentos precipitados, preconceitos, falta de diálogo,
+estresse, desinformação e dificuldades de comunicação.
+
+</p>
+
+<p>
+
+Reconhecer essas barreiras é um primeiro passo para desenvolver relações mais
+abertas e respeitosas.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Julgamentos</h3>
+
+<p>
+
+Tirar conclusões antes de compreender o contexto pode prejudicar o diálogo.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Preconceitos</h3>
+
+<p>
+
+Ideias preconcebidas dificultam a compreensão das experiências dos outros.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Falta de diálogo</h3>
+
+<p>
+
+Conversas superficiais ou inexistentes reduzem oportunidades de entendimento.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Desinformação</h3>
+
+<p>
+
+Buscar informações confiáveis ajuda a evitar interpretações equivocadas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="reflexao">
+
+<h2>Reflexão</h2>
+
+<div class="quote">
+
+"A cooperação fortalece grupos. A empatia fortalece pessoas. Juntas, elas
+podem contribuir para comunidades mais respeitosas, solidárias e preparadas
+para enfrentar desafios coletivos."
+
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- PARTE 3 - COOPERAÇÃO E CONEXÃO HUMANA -->
+<!-- Cole este trecho antes da tag </footer> ou </body> -->
+<!-- ===================================================== -->
+
+<section id="historia-cooperacao">
+
+<h2>A Cooperação ao Longo da História</h2>
+
+<div class="card">
+
+<p>
+Desde os primeiros grupos humanos, a cooperação desempenhou um papel importante
+na sobrevivência. Pessoas compartilhavam alimentos, conhecimentos, ferramentas
+e responsabilidades para enfrentar desafios como encontrar abrigo, obter água,
+cultivar alimentos e proteger a comunidade.
+</p>
+
+<p>
+Ao longo do tempo, essa capacidade de trabalhar em conjunto contribuiu para o
+desenvolvimento da agricultura, das cidades, das universidades, da ciência, da
+medicina, da arte e de muitas outras áreas da sociedade.
+</p>
+
+<p>
+Atualmente, a cooperação continua presente em projetos científicos
+internacionais, ações humanitárias, programas de preservação ambiental,
+iniciativas educacionais e no cotidiano das famílias e comunidades.
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="confianca">
+
+<h2>A Importância da Confiança</h2>
+
+<div class="card">
+
+<p>
+
+A confiança é um dos pilares das relações humanas. Ela é construída
+gradualmente por meio da honestidade, da responsabilidade, do respeito e da
+coerência entre palavras e ações.
+
+</p>
+
+<p>
+
+Quando existe confiança, as pessoas tendem a colaborar com mais facilidade,
+compartilhar ideias e enfrentar desafios em conjunto.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Honestidade</h3>
+
+<p>
+Agir com sinceridade fortalece os relacionamentos.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Respeito</h3>
+
+<p>
+Valorizar diferentes opiniões favorece ambientes colaborativos.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Compromisso</h3>
+
+<p>
+Cumprir acordos ajuda a construir confiança ao longo do tempo.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Responsabilidade</h3>
+
+<p>
+Assumir as consequências das próprias ações demonstra maturidade.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="familia">
+
+<h2>Empatia na Família</h2>
+
+<div class="card">
+
+<p>
+
+A família costuma ser um dos primeiros espaços onde aprendemos sobre diálogo,
+cooperação e respeito. Compartilhar responsabilidades, ouvir diferentes pontos
+de vista e resolver conflitos de forma construtiva pode fortalecer os vínculos.
+
+</p>
+
+<p>
+
+Pequenos gestos, como agradecer, pedir desculpas quando necessário, oferecer
+ajuda e reconhecer o esforço dos outros, contribuem para um ambiente mais
+acolhedor.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="escola">
+
+<h2>Empatia na Escola</h2>
+
+<div class="card">
+
+<p>
+
+A escola reúne pessoas com histórias, interesses e habilidades diferentes.
+Por isso, ela é um ambiente importante para desenvolver convivência,
+cooperação e respeito mútuo.
+
+</p>
+
+<p>
+
+Projetos em grupo, atividades colaborativas e conversas abertas ajudam os
+estudantes a aprender não apenas conteúdos acadêmicos, mas também habilidades
+sociais importantes.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Respeitar diferenças</h3>
+
+<p>
+Cada estudante possui seu próprio ritmo de aprendizagem e suas experiências.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Compartilhar conhecimento</h3>
+
+<p>
+Ensinar um colega também é uma forma de aprender.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Resolver conflitos</h3>
+
+<p>
+O diálogo costuma ser mais eficaz do que atitudes impulsivas.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="trabalho">
+
+<h2>Empatia no Ambiente de Trabalho</h2>
+
+<div class="card">
+
+<p>
+
+Organizações que valorizam a colaboração tendem a criar ambientes em que as
+pessoas podem trocar ideias, aprender umas com as outras e resolver problemas
+de forma conjunta.
+
+</p>
+
+<p>
+
+Uma cultura baseada em respeito e escuta favorece relações profissionais mais
+saudáveis e produtivas.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Trabalho em Equipe</h3>
+
+<p>
+Projetos colaborativos reúnem diferentes conhecimentos e experiências.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Feedback Respeitoso</h3>
+
+<p>
+Comentários construtivos podem contribuir para o desenvolvimento profissional.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Reconhecimento</h3>
+
+<p>
+Valorizar o esforço das pessoas fortalece o sentimento de pertencimento.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="diversidade">
+
+<h2>Diversidade e Inclusão</h2>
+
+<div class="card">
+
+<p>
+
+Cada pessoa possui uma história única, formada por diferentes experiências,
+culturas, habilidades, crenças e perspectivas. A diversidade amplia as
+possibilidades de aprendizagem e inovação.
+
+</p>
+
+<p>
+
+Promover ambientes inclusivos significa buscar que todas as pessoas sejam
+tratadas com respeito, tenham oportunidades de participação e possam
+contribuir com suas capacidades.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="solidariedade">
+
+<h2>Solidariedade</h2>
+
+<div class="card">
+
+<p>
+
+A solidariedade representa a disposição para colaborar com outras pessoas e
+com a comunidade. Ela pode se manifestar por meio de ações simples, como
+oferecer apoio, compartilhar conhecimentos, participar de iniciativas sociais
+ou contribuir para melhorar o ambiente em que vivemos.
+
+</p>
+
+</div>
+
+<div class="highlight">
+
+<strong>Exemplos de atitudes solidárias:</strong>
+
 <ul>
 
-<li>Talia Hale</li>
+<li>Participar de campanhas comunitárias.</li>
 
-<li>Peter Hale</li>
+<li>Compartilhar conhecimento com outras pessoas.</li>
 
-<li>Derek Hale</li>
+<li>Oferecer ajuda quando possível.</li>
 
-<li>Laura Hale</li>
+<li>Respeitar quem pensa diferente.</li>
 
-<li>Cora Hale</li>
+<li>Cuidar dos espaços públicos.</li>
 
-<li>Malia Tate</li>
+<li>Incentivar ações coletivas.</li>
+
+<li>Praticar gentileza no dia a dia.</li>
 
 </ul>
 
@@ -679,679 +1400,601 @@ Era considerada uma das lobisomens mais fortes já vistas.
 
 </section>
 
-<!-- ========================================= -->
-<!-- FAMÍLIA ARGENT -->
-<!-- ========================================= -->
+<!-- ===================================================== -->
 
-<section>
+<section id="habilidades">
 
-<h2>Família Argent</h2>
+<h2>Habilidades para Fortalecer a Conexão Humana</h2>
+
+<div class="grid">
+
+<div class="box">
+<h3>Escutar</h3>
+<p>Ouvir com atenção demonstra interesse e respeito.</p>
+</div>
+
+<div class="box">
+<h3>Observar</h3>
+<p>Perceber sinais verbais e não verbais ajuda na compreensão.</p>
+</div>
+
+<div class="box">
+<h3>Dialogar</h3>
+<p>Conversas respeitosas favorecem soluções compartilhadas.</p>
+</div>
+
+<div class="box">
+<h3>Cooperar</h3>
+<p>Trabalhar em equipe amplia possibilidades de aprendizagem.</p>
+</div>
+
+<div class="box">
+<h3>Respeitar</h3>
+<p>Valorizar diferentes perspectivas fortalece a convivência.</p>
+</div>
+
+<div class="box">
+<h3>Aprender</h3>
+<p>Estar aberto a novas ideias contribui para o crescimento pessoal.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="citacoes">
+
+<h2>Pensamentos Inspiradores</h2>
+
+<div class="quote">
+
+"A empatia abre caminhos para o diálogo; a cooperação transforma esse diálogo
+em ação."
+
+</div>
+
+<div class="quote">
+
+"Pequenos gestos de respeito e gentileza podem fortalecer grandes relações."
+
+</div>
+
+<div class="quote">
+
+"Comunidades mais fortes são construídas quando pessoas trabalham juntas em
+busca de objetivos comuns."
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- PARTE 4 - SAÚDE, EDUCAÇÃO E PRÁTICAS -->
+<!-- Cole este trecho antes da tag </footer> ou </body> -->
+<!-- ===================================================== -->
+
+<section id="saude-mental">
+
+<h2>Empatia e Bem-Estar</h2>
 
 <div class="card">
 
+<p>
+
+Relações baseadas em respeito, diálogo e apoio mútuo podem contribuir para o
+bem-estar das pessoas. Sentir-se ouvido e acolhido fortalece o sentimento de
+pertencimento e pode tornar os desafios do cotidiano mais fáceis de enfrentar.
+
+</p>
+
+<p>
+
+Da mesma forma, oferecer apoio de maneira respeitosa pode fortalecer vínculos
+e incentivar ambientes mais acolhedores em famílias, escolas, comunidades e
+locais de trabalho.
+
+</p>
+
+<p>
+
+Cada pessoa enfrenta desafios diferentes. Por isso, ouvir sem julgamentos e
+demonstrar respeito pode fazer grande diferença na qualidade das relações.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="gentileza">
+
+<h2>O Poder da Gentileza</h2>
+
+<div class="card">
+
+<p>
+
+A gentileza consiste em pequenas atitudes de respeito e consideração pelo
+próximo. Muitas vezes ela se manifesta por meio de ações simples que tornam o
+ambiente mais agradável para todos.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Cumprimentar</h3>
+
+<p>
+
+Um simples "bom dia" pode iniciar uma conversa de maneira positiva.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Agradecer</h3>
+
+<p>
+
+Reconhecer a ajuda recebida fortalece relações de confiança.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Pedir licença</h3>
+
+<p>
+
+Demonstrar educação e respeito contribui para uma convivência harmoniosa.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Reconhecer esforços</h3>
+
+<p>
+
+Valorizar o trabalho e a dedicação das pessoas incentiva a colaboração.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="educacao">
+
+<h2>Educação para a Empatia</h2>
+
+<div class="card">
+
+<p>
+
+A empatia pode ser desenvolvida ao longo da vida por meio da convivência,
+do diálogo e da aprendizagem contínua. Famílias, escolas, universidades,
+organizações e comunidades desempenham papel importante nesse processo.
+
+</p>
+
+<p>
+
+Experiências que incentivam cooperação, escuta ativa e resolução pacífica de
+conflitos ajudam a construir ambientes mais respeitosos.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="atividades">
+
+<h2>Atividades para Desenvolver Empatia</h2>
+
+<div class="grid">
+
+<div class="box">
+
+<h3>Escuta em Duplas</h3>
+
+<p>
+
+Uma pessoa fala durante alguns minutos enquanto a outra apenas escuta com
+atenção. Depois, quem ouviu resume o que compreendeu.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Projetos Colaborativos</h3>
+
+<p>
+
+Grupos podem planejar e executar atividades em conjunto, aprendendo a dividir
+tarefas e responsabilidades.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Leitura Compartilhada</h3>
+
+<p>
+
+Ler histórias e conversar sobre os sentimentos e decisões dos personagens
+estimula diferentes perspectivas.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Voluntariado</h3>
+
+<p>
+
+Participar de ações comunitárias permite conhecer diferentes realidades e
+fortalecer a cooperação.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Diário de Gratidão</h3>
+
+<p>
+
+Registrar diariamente acontecimentos positivos pode incentivar uma visão mais
+atenta às relações e ao apoio recebido.
+
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Rodas de Conversa</h3>
+
+<p>
+
+Espaços de diálogo ajudam participantes a compartilhar experiências e ouvir
+outras perspectivas com respeito.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="valores">
+
+<h2>Valores que Fortalecem a Convivência</h2>
+
+<div class="card">
+
+<p>
+
+A convivência respeitosa é construída diariamente por meio de atitudes,
+escolhas e comportamentos. Alguns valores podem orientar esse processo.
+
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+<h3>Respeito</h3>
+<p>Reconhecer a dignidade de todas as pessoas.</p>
+</div>
+
+<div class="box">
+<h3>Honestidade</h3>
+<p>Agir com sinceridade e responsabilidade.</p>
+</div>
+
+<div class="box">
+<h3>Solidariedade</h3>
+<p>Contribuir para o bem-estar coletivo.</p>
+</div>
+
+<div class="box">
+<h3>Cooperação</h3>
+<p>Buscar soluções em conjunto.</p>
+</div>
+
+<div class="box">
+<h3>Responsabilidade</h3>
+<p>Assumir compromissos e consequências das próprias ações.</p>
+</div>
+
+<div class="box">
+<h3>Justiça</h3>
+<p>Tratar as pessoas com equilíbrio e imparcialidade.</p>
+</div>
+
+<div class="box">
+<h3>Gentileza</h3>
+<p>Demonstrar consideração nas pequenas atitudes.</p>
+</div>
+
+<div class="box">
+<h3>Diálogo</h3>
+<p>Resolver diferenças por meio da conversa respeitosa.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="desafios">
+
+<h2>Desafios da Sociedade Atual</h2>
+
+<div class="card">
+
+<p>
+
+Vivemos em um mundo conectado por tecnologias de comunicação, mas isso não
+garante, por si só, relações humanas profundas. Em muitos contextos, o ritmo
+acelerado da vida pode reduzir o tempo dedicado ao diálogo e à convivência.
+
+</p>
+
+<p>
+
+Por isso, fortalecer habilidades como escuta ativa, cooperação, respeito e
+empatia continua sendo importante para construir comunidades mais acolhedoras
+e preparadas para enfrentar desafios coletivos.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="reflexoes">
+
+<h2>Reflexões</h2>
+
+<div class="quote">
+
+"Escutar com atenção é uma forma de demonstrar respeito."
+
+</div>
+
+<div class="quote">
+
+"Cooperar não significa pensar igual, mas trabalhar juntos mesmo diante de
+diferenças."
+
+</div>
+
+<div class="quote">
+
+"Cada encontro humano é uma oportunidade para aprender algo novo."
+
+</div>
+
+<div class="quote">
+
+"A confiança cresce quando palavras e ações caminham na mesma direção."
+
+</div>
+
+<div class="quote">
+
+"Uma comunidade se fortalece quando seus integrantes compartilham
+responsabilidades e cuidam uns dos outros."
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+
+<section id="conclusao-parcial">
+
+<h2>Conclusão Parcial</h2>
+
+<div class="card">
+
+<p>
+
+Empatia, cooperação e conexão humana são habilidades que podem ser
+desenvolvidas ao longo da vida. Elas envolvem disposição para ouvir,
+aprender, dialogar e construir soluções compartilhadas.
+
+</p>
+
+<p>
+
+Ao praticar essas atitudes em diferentes contextos, contribuímos para relações
+mais respeitosas, ambientes colaborativos e comunidades mais fortes.
+
+</p>
+
+<p>
+
+Na próxima parte serão apresentados conhecimentos sobre pesquisas
+científicas relacionadas ao comportamento cooperativo, curiosidades,
+perguntas frequentes, uma linha do tempo da cooperação humana e recursos
+interativos em JavaScript para tornar o site mais dinâmico.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FINALIZAÇÃO DO SITE -->
+<!-- ===================================================== -->
+
+<section id="final">
+
+<h2>Conclusão: Construindo um Mundo Mais Humano</h2>
+
+<div class="card">
+
+<p>
+Ao longo deste conteúdo, exploramos a importância da empatia, da cooperação e
+da conexão humana como bases essenciais para uma sociedade mais equilibrada e
+acolhedora.
+</p>
+
+<p>
+A empatia nos ensina a olhar além de nossas próprias experiências e buscar
+compreender os sentimentos, desafios e perspectivas das outras pessoas. Ela
+nos lembra que cada indivíduo possui uma história única e merece ser tratado
+com respeito e consideração.
+</p>
+
+<p>
+A cooperação demonstra que somos capazes de alcançar resultados maiores quando
+unimos nossas capacidades. Trabalhar juntos, compartilhar conhecimentos e
+valorizar diferentes habilidades permite criar soluções mais criativas e
+eficientes para os desafios da vida.
+</p>
+
+<p>
+A conexão humana representa os laços que construímos ao longo da vida.
+Amizades, famílias, comunidades e equipes se fortalecem quando existe diálogo,
+confiança e disposição para apoiar uns aos outros.
+</p>
+
+</div>
+
+
+<div class="highlight">
+
+<h3>Pequenas atitudes podem transformar relações:</h3>
+
 <ul>
 
-<li>Chris Argent</li>
+<li>Ouvir antes de julgar.</li>
 
-<li>Allison Argent</li>
+<li>Respeitar opiniões diferentes.</li>
 
-<li>Victoria Argent</li>
+<li>Demonstrar gentileza no cotidiano.</li>
 
-<li>Gerard Argent</li>
+<li>Ajudar quando alguém precisar.</li>
 
-<li>Kate Argent</li>
+<li>Reconhecer o valor das pessoas ao nosso redor.</li>
+
+<li>Buscar soluções através do diálogo.</li>
+
+<li>Construir ambientes baseados em confiança e respeito.</li>
 
 </ul>
 
 </div>
 
-</section>  
-
-
-
-                <!-- ================================================= -->
-<!-- VILÕES COMPLETOS -->
-<!-- ================================================= -->
-
-<section id="viloes-completos">
-
-<h2>Vilões da Série</h2>
 
 <div class="card">
-<h3>Peter Hale</h3>
+
+<h3>Um compromisso com a humanidade</h3>
+
 <p>
-Peter Hale foi o primeiro grande vilão da série.
-Após sobreviver ao incêndio da Casa Hale, passou anos internado,
-planejando vingança contra todos os responsáveis pela morte de sua família.
-Foi ele quem mordeu Scott McCall.
-Seu objetivo era recuperar o poder de Alpha e dominar Beacon Hills.
-Apesar de ter se tornado aliado em alguns momentos,
-Peter nunca deixou de agir em benefício próprio.
+Construir relações melhores é uma responsabilidade coletiva. Cada conversa,
+cada escolha e cada atitude podem contribuir para criar espaços onde as
+pessoas se sintam valorizadas, compreendidas e incluídas.
 </p>
-</div>
 
-<div class="card">
-<h3>Kate Argent</h3>
 <p>
-Kate Argent foi responsável pelo incêndio que destruiu a Casa Hale.
-Cruel e manipuladora, acreditava que todos os seres sobrenaturais
-deveriam ser exterminados. Mais tarde retorna transformada em uma
-Werejaguar, tornando-se ainda mais perigosa.
+A mudança começa nas ações do dia a dia. Quando praticamos empatia,
+cooperação e respeito, ajudamos a formar uma sociedade mais solidária,
+consciente e preparada para enfrentar desafios juntos.
 </p>
-</div>
 
-<div class="card">
-<h3>Gerard Argent</h3>
 <p>
-Avô de Allison Argent.
-Um dos maiores caçadores de criaturas sobrenaturais.
-Extremamente inteligente, manipulador e impiedoso.
-Mesmo quando parecia derrotado, continuava elaborando novos planos.
+O futuro das relações humanas depende da nossa capacidade de reconhecer que,
+apesar das diferenças, todos compartilhamos a necessidade de sermos ouvidos,
+respeitados e acolhidos.
 </p>
+
 </div>
 
+
+<div class="quote">
+
+"Ser humano é mais do que existir individualmente.
+É aprender, compartilhar, cooperar e construir caminhos junto com outras
+pessoas."
+
+</div>
+
+
 <div class="card">
-<h3>Jackson Whittemore (Kanima)</h3>
+
+<h3>Mensagem Final</h3>
+
 <p>
-Jackson tornou-se o Kanima devido aos conflitos de sua identidade.
-Enquanto estava transformado, obedecia às ordens de seu mestre,
-cometendo diversos assassinatos em Beacon Hills.
+Que este conhecimento inspire novas atitudes, conversas mais profundas e
+relações mais positivas. A empatia cria pontes, a cooperação transforma
+possibilidades em realidade e a conexão humana torna nossa caminhada mais
+significativa.
 </p>
-</div>
 
-<div class="card">
-<h3>Matt Daehler</h3>
 <p>
-Foi o primeiro mestre do Kanima.
-Utilizou Jackson para executar sua vingança contra diversas pessoas.
+Cada pessoa possui o poder de contribuir para um mundo melhor através de
+pequenos gestos de compreensão, respeito e solidariedade.
 </p>
-</div>
-
-<div class="card">
-<h3>Gerard como Mestre do Kanima</h3>
-<p>
-Após controlar Jackson, Gerard utilizou o Kanima como arma para
-eliminar todos os lobisomens da cidade.
-</p>
-</div>
-
-<div class="card">
-<h3>Deucalion</h3>
-<p>
-Conhecido como o Alpha dos Alphas.
-Liderava uma poderosa alcateia composta por Alphas.
-Seu sonho era reunir os lobisomens mais fortes do mundo.
-</p>
-</div>
-
-<div class="card">
-<h3>Kali</h3>
-<p>
-Integrante da Alcateia Alpha.
-Possuía garras extremamente afiadas e enorme força física.
-Era conhecida por lutar descalça.
-</p>
-</div>
-
-<div class="card">
-<h3>Ennis</h3>
-<p>
-Outro membro da Alcateia Alpha.
-Violento e brutal, preferia resolver tudo usando força.
-</p>
-</div>
-
-<div class="card">
-<h3>The Twins</h3>
-<p>
-Ethan e Aiden começaram como antagonistas.
-Possuíam a habilidade rara de se fundirem em um único Alpha gigante.
-Mais tarde abandonaram Deucalion.
-</p>
-</div>
-
-<div class="card">
-<h3>Jennifer Blake / Darach</h3>
-<p>
-Jennifer parecia apenas uma professora,
-mas era uma poderosa Darach.
-Realizou diversos sacrifícios humanos para aumentar seus poderes.
-</p>
-</div>
-
-<div class="card">
-<h3>Nogitsune</h3>
-<p>
-Um espírito sombrio japonês que se alimenta de dor,
-caos e sofrimento.
-Possuiu Stiles Stilinski e quase destruiu Beacon Hills.
-É considerado um dos vilões mais assustadores da série.
-</p>
-</div>
-
-<div class="card">
-<h3>Oni</h3>
-<p>
-Guerreiros espirituais enviados para capturar o Nogitsune.
-Embora não fossem exatamente malignos,
-lutavam contra qualquer pessoa que estivesse em seu caminho.
-</p>
-</div>
-
-<div class="card">
-<h3>The Benefactor</h3>
-<p>
-Criou uma lista contendo centenas de criaturas sobrenaturais,
-oferecendo recompensas milionárias para quem as eliminasse.
-</p>
-</div>
-
-<div class="card">
-<h3>Meredith Walker</h3>
-<p>
-Banshee internada em Eichen House.
-Foi responsável por criar a Lista do Benefactor
-utilizando suas habilidades sobrenaturais.
-</p>
-</div>
-
-<div class="card">
-<h3>Assassinos Profissionais</h3>
-<p>
-Diversos mercenários chegaram em Beacon Hills
-para cumprir os contratos da Lista do Benefactor.
-Cada um possuía habilidades únicas.
-</p>
-</div>
-
-<div class="card">
-<h3>Theo Raeken</h3>
-<p>
-Criado pelos Doutores do Medo,
-Theo tornou-se uma Quimera.
-Seu plano era destruir Scott
-e formar sua própria alcateia.
-</p>
-</div>
-
-<div class="card">
-<h3>Dread Doctors</h3>
-<p>
-Médicos mascarados que realizavam experimentos sobrenaturais.
-Criaram dezenas de Quimeras através de dolorosos procedimentos.
-São considerados um dos grupos mais misteriosos da série.
-</p>
-</div>
-
-<div class="card">
-<h3>Donovan</h3>
-<p>
-Uma Quimera extremamente agressiva.
-Perseguiu Stiles durante a quinta temporada.
-</p>
-</div>
-
-<div class="card">
-<h3>Tracy Stewart</h3>
-<p>
-Outra Quimera criada pelos Doutores do Medo.
-Possuía habilidades relacionadas ao Kanima.
-</p>
-</div>
-
-<div class="card">
-<h3>Josh Diaz</h3>
-<p>
-Quimera capaz de controlar eletricidade.
-Participou dos planos de Theo.
-</p>
-</div>
-
-<div class="card">
-<h3>Hayden Romero</h3>
-<p>
-Inicialmente controlada por Theo,
-mais tarde tornou-se aliada de Liam.
-</p>
-</div>
-
-<div class="card">
-<h3>Sebastien Valet</h3>
-<p>
-Conhecido como a Besta de Gévaudan.
-Um dos seres mais poderosos de toda a franquia Teen Wolf.
-Era praticamente invencível.
-</p>
-</div>
-
-<div class="card">
-<h3>Marcel Geyer</h3>
-<p>
-Professor conhecido como A Besta.
-Teve papel importante na história envolvendo Sebastien.
-</p>
-</div>
-
-<div class="card">
-<h3>Ghost Riders</h3>
-<p>
-Cavaleiros sobrenaturais pertencentes à Caçada Selvagem.
-Apagavam completamente as pessoas da existência,
-fazendo todos esquecerem delas.
-</p>
-</div>
-
-<div class="card">
-<h3>Douglas</h3>
-<p>
-Professor de história que acabou tornando-se um Löwenmensch.
-Tentou controlar os Ghost Riders para dominar o mundo.
-</p>
-</div>
-
-<div class="card">
-<h3>Anuk-Ite</h3>
-<p>
-Entidade ancestral formada pelo medo.
-Qualquer pessoa que olhasse diretamente para seu rosto
-era imediatamente transformada em pedra.
-Foi o último grande vilão da série.
-</p>
-</div>
-
-</section>
-
-<!-- ================================================= -->
-<!-- CRIATURAS SOBRENATURAIS -->
-<!-- ================================================= -->
-
-<section id="criaturas">
-
-<h2>Criaturas Sobrenaturais</h2>
-
-<div class="card">
-
-<h3>Lobisomens</h3>
-<p>Seres capazes de assumir formas lupinas e aumentar força, velocidade e sentidos.</p>
-
-<h3>True Alpha</h3>
-<p>Alpha que conquista seu poder através do caráter e liderança.</p>
-
-<h3>Alpha</h3>
-<p>Líder de uma alcateia.</p>
-
-<h3>Beta</h3>
-<p>Lobisomem subordinado ao Alpha.</p>
-
-<h3>Omega</h3>
-<p>Lobisomem sem alcateia.</p>
-
-<h3>Banshee</h3>
-<p>Ser sobrenatural que prevê mortes através de gritos.</p>
-
-<h3>Hellhound</h3>
-<p>Guardião sobrenatural ligado ao fogo.</p>
-
-<h3>Kitsune</h3>
-<p>Raposa espiritual japonesa.</p>
-
-<h3>Nogitsune</h3>
-<p>Espírito maligno que se alimenta do caos.</p>
-
-<h3>Kanima</h3>
-<p>Criatura reptiliana extremamente venenosa.</p>
-
-<h3>Werejaguar</h3>
-<p>Humano capaz de transformar-se em uma onça sobrenatural.</p>
-
-<h3>Quimeras</h3>
-<p>Humanos modificados pelos Doutores do Medo.</p>
-
-<h3>Wendigos</h3>
-<p>Criaturas canibais extremamente rápidas.</p>
-
-<h3>Berserkers</h3>
-<p>Guerreiros mortos-vivos controlados por magia.</p>
-
-<h3>Skinwalkers</h3>
-<p>Seres espirituais do deserto.</p>
-
-<h3>Ghost Riders</h3>
-<p>Cavaleiros da Caçada Selvagem.</p>
-
-<h3>Druidas</h3>
-<p>Sábios que dominam magia da natureza.</p>
-
-<h3>Darach</h3>
-<p>Um Druida corrompido pela magia sombria.</p>
 
 </div>
+
 
 </section>
 
 
-<!-- ================================================= -->
-<!-- LOCAIS IMPORTANTES DE BEACON HILLS -->
-<!-- ================================================= -->
+<footer>
 
-<section id="locais">
-
-<h2>Locais Importantes</h2>
-
-<div class="card">
-
-<h3>Beacon Hills</h3>
+<h2>Empatia • Cooperação • Conexão Humana</h2>
 
 <p>
-Beacon Hills é a cidade fictícia onde acontece toda a história de Teen Wolf.
-Ela foi construída sobre um importante ponto de energia sobrenatural,
-atraindo criaturas de diversos tipos ao longo dos séculos.
+Um espaço dedicado à valorização das relações humanas e da construção de uma
+convivência mais respeitosa.
 </p>
-
-</div>
-
-<div class="card">
-
-<h3>Beacon Hills High School</h3>
 
 <p>
-A escola onde Scott, Stiles, Lydia, Allison, Liam e outros personagens estudam.
-Grande parte dos acontecimentos importantes ocorre dentro de seus corredores,
-salas de aula, biblioteca e ginásio.
+ - Projeto sobre Empatia, Cooperação e Conexão Humana
 </p>
 
-</div>
-
-<div class="card">
-
-<h3>Hospital Memorial</h3>
-
-<p>
-Hospital onde Melissa McCall trabalha.
-Durante a série, inúmeras batalhas terminam com personagens sendo levados
-para este local.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Delegacia de Beacon Hills</h3>
-
-<p>
-Local de trabalho do Xerife Noah Stilinski.
-Diversas investigações sobre assassinatos e desaparecimentos começam aqui.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Reserva Florestal</h3>
-
-<p>
-A floresta é um dos lugares mais perigosos da cidade.
-Foi nela que Scott recebeu a mordida do Alpha e onde muitas criaturas vivem.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Casa Hale</h3>
-
-<p>
-A antiga mansão da família Hale foi destruída em um incêndio criminoso.
-Mesmo em ruínas, continua sendo um dos locais mais importantes da série.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Eichen House</h3>
-
-<p>
-Hospital psiquiátrico que abriga pacientes humanos e sobrenaturais.
-Diversos vilões perigosos ficaram presos neste local.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Clínica Veterinária</h3>
-
-<p>
-Consultório de Alan Deaton.
-Além de cuidar de animais, funciona como ponto de encontro da alcateia.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Nemeton</h3>
-
-<p>
-Uma árvore sagrada extremamente antiga.
-É considerada uma poderosa fonte de energia sobrenatural
-e influencia praticamente todos os acontecimentos da série.
-</p>
-
-</div>
-
-</section>
-
-<!-- ================================================= -->
-<!-- FAMÍLIA MCCALL -->
-<!-- ================================================= -->
-
-<section id="mccall">
-
-<h2>Família McCall</h2>
-
-<div class="card">
-
-<h3>Scott McCall</h3>
-
-<p>
-Protagonista da série e primeiro True Alpha mostrado em Teen Wolf.
-Seu principal objetivo sempre foi proteger inocentes,
-mesmo quando isso significava colocar sua própria vida em risco.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Melissa McCall</h3>
-
-<p>
-Mãe de Scott.
-Trabalha como enfermeira e demonstra enorme coragem durante toda a série.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Rafael McCall</h3>
-
-<p>
-Pai de Scott.
-Passou muitos anos afastado da família,
-mas retorna em temporadas posteriores tentando reconstruir sua relação
-com o filho.
-</p>
-
-</div>
-
-</section>
-
-<!-- ================================================= -->
-<!-- FAMÍLIA STILINSKI -->
-<!-- ================================================= -->
-
-<section id="stilinski">
-
-<h2>Família Stilinski</h2>
-
-<div class="card">
-
-<h3>Stiles Stilinski</h3>
-
-<p>
-Sem possuir poderes sobrenaturais,
-Stiles tornou-se um dos personagens mais importantes da série
-graças à sua inteligência, criatividade e coragem.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Noah Stilinski</h3>
-
-<p>
-Xerife de Beacon Hills.
-É um dos poucos adultos que enfrentam diretamente
-as ameaças sobrenaturais para proteger a cidade.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Claudia Stilinski</h3>
-
-<p>
-Mãe de Stiles.
-Faleceu anos antes do início da série,
-mas continua sendo uma figura muito importante
-na vida do filho.
-</p>
-
-</div>
-
-</section>
-
-<!-- ================================================= -->
-<!-- PODERES DOS LOBISOMENS -->
-<!-- ================================================= -->
-
-<section id="poderes">
-
-<h2>Poderes dos Lobisomens</h2>
-
-<div class="card">
-
-<ul>
-
-<li>Superforça</li>
-
-<li>Supervelocidade</li>
-
-<li>Superagilidade</li>
-
-<li>Reflexos aprimorados</li>
-
-<li>Regeneração acelerada</li>
-
-<li>Sentidos aguçados</li>
-
-<li>Audição extremamente desenvolvida</li>
-
-<li>Olfato capaz de identificar pessoas</li>
-
-<li>Resistência física elevada</li>
-
-<li>Garras retráteis</li>
-
-<li>Presas afiadas</li>
-
-<li>Olhos brilhantes que indicam sua posição na alcateia</li>
-
-<li>Capacidade de transformar humanos através da mordida</li>
-
-<li>Comunicação através de uivos</li>
-
-<li>Controle parcial da dor</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<!-- ================================================= -->
-<!-- CURIOSIDADES -->
-<!-- ================================================= -->
-
-<section id="curiosidades">
-
-<h2>Curiosidades da Série</h2>
-
-<div class="card">
-
-<ul>
-
-<li>A série foi exibida originalmente entre 2011 e 2017.</li>
-
-<li>Foi inspirada no filme Teen Wolf de 1985, mas possui história completamente diferente.</li>
-
-<li>Scott McCall tornou-se um raro True Alpha.</li>
-
-<li>Stiles nunca recebeu poderes sobrenaturais durante a série.</li>
-
-<li>Lydia foi a primeira Banshee apresentada na franquia.</li>
-
-<li>Dylan O'Brien tornou-se um dos atores mais populares do elenco.</li>
-
-<li>Tyler Posey interpretou Scott McCall durante todas as temporadas.</li>
-
-<li>A série mistura ação, suspense, terror e romance.</li>
-
-<li>Beacon Hills é um importante centro de energia sobrenatural devido ao Nemeton.</li>
-
-<li>Em 2023 foi lançado um filme que continua os acontecimentos da série.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<!-- ================================================= -->
-<!-- FRASES MARCANTES -->
-<!-- ================================================= -->
-
-<section id="frases">
-
-<h2>Frases Marcantes</h2>
-
-<div class="card">
-
-<blockquote>
-"Você não luta por vingança. Você luta para proteger."
-</blockquote>
-
-<blockquote>
-"Somos uma alcateia."
-</blockquote>
-
-<blockquote>
-"Às vezes os monstros são humanos."
-</blockquote>
-
-<blockquote>
-"O medo é a arma mais poderosa."
-</blockquote>
-
-<blockquote>
-"Um verdadeiro Alpha conquista seu poder."
-</blockquote>
-
-</div>
-
-</section>
+</footer>
