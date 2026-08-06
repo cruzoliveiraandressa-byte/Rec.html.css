@@ -1,1091 +1,306 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Empatia e Conexão Humana</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f7f9fb;
-    color:#333;
-    line-height:1.8;
-}
-
-header{
-    height:100vh;
-    background:url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1600&q=80') center/cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-}
-
-header::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.55);
-}
-
-.hero{
-    position:relative;
-    color:white;
-    text-align:center;
-    max-width:900px;
-    padding:20px;
-}
-
-.hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:1.3rem;
-}
-
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 30px;
-}
-
-h2{
-    color:#1e3d59;
-    margin-bottom:20px;
-    font-size:2.2rem;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-    margin-top:40px;
-}
-
-.grid img{
-    width:100%;
-    border-radius:15px;
-    box-shadow:0 15px 40px rgba(0,0,0,.2);
-}
-
-.text p{
-    margin-bottom:20px;
-}
-
-.banner{
-    background:#1e3d59;
-    color:white;
-    text-align:center;
-    padding:90px 30px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    margin-top:50px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    padding:30px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h3{
-    color:#1e3d59;
-    margin-bottom:15px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
-    margin-top:40px;
-}
-
-.gallery img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-    border-radius:12px;
-}
-
-.quote{
-    font-size:1.6rem;
-    text-align:center;
-    font-style:italic;
-    color:#1e3d59;
-    padding:80px 20px;
-}
-
-footer{
-    background:#1e3d59;
-    color:white;
-    text-align:center;
-    padding:40px;
-}
-
-@media(max-width:900px){
-
-.hero h1{
-font-size:2.8rem;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-}
-</style>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ed e Lorraine Warren - Caçadores de Assombrações</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #f2f2f2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5b9f4?ixlib=rb-4.0.4&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ff0000;
+            text-shadow: 2px 2px 4px #000;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #ff0000;
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .biografia, .casoFamoso, .teorias {
+            margin-bottom: 50px;
+        }
+        .imagem {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #ff0000;
+        }
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        /* Efeito de sombra para o texto no header */
+        .shadow-text {
+            text-shadow: 2px 2px 4px #000;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-
-<div class="hero">
-<h1>Empatia e Conexão Humana</h1>
-
-<p>
-Construindo relações mais fortes através da escuta, do respeito e da compreensão das emoções.
-</p>
-
-</div>
-
+    <h1 class="shadow-text">Ed e Lorraine Warren</h1>
+    <p style="color:#ccc;">Caçadores de Assombrações e Pesquisadores do Sobrenatural</p>
 </header>
 
-<section>
-
-<h2>O poder da empatia</h2>
-
-<div class="grid">
-
-<div class="text">
-
-<p>
-Empatia é a capacidade de compreender os sentimentos, perspectivas e experiências de outra pessoa sem deixar de reconhecer que cada indivíduo possui sua própria realidade. Ela fortalece amizades, melhora relações familiares, transforma ambientes de trabalho e aproxima comunidades.
-</p>
-
-<p>
-Quando ouvimos alguém com atenção verdadeira, demonstramos respeito e interesse genuíno. Pequenos gestos, como olhar nos olhos, evitar interrupções e responder com gentileza, podem criar um ambiente de confiança capaz de reduzir conflitos e fortalecer vínculos.
-</p>
-
-<p>
-Em um mundo cada vez mais conectado pela tecnologia, mas muitas vezes distante emocionalmente, a empatia torna-se uma habilidade essencial para criar conexões humanas significativas.
-</p>
-
-</div>
-
-<img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=80">
-
-</div>
-
+<section class="biografia">
+    <h2>Quem Foram Ed e Lorraine Warren?</h2>
+    <img src="https://images.unsplash.com/photo-1563912837059-4b4d4bde6f72?ixlib=rb-4.0.4&auto=format&fit=crop&w=1500&q=80" alt="Ed e Lorraine Warren" class="imagem" />
+    <p>
+        Ed e Lorraine Warren foram um casal de investigadores do sobrenatural famosos por seus trabalhos no combate a atividades paranormais, possessões demoníacas e assombrações. Ed Warren foi um caçador de fantasmas e demonologista, enquanto Lorraine era clarividente e médiuns. Juntos, eles participaram de inúmeros casos famosos e ajudaram a resolver mistérios relacionados ao mundo espiritual.
+    </p>
 </section>
 
-<section>
-
-<div class="grid">
-
-<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
-
-<div class="text">
-
-<h2>Conexões que transformam vidas</h2>
-
-<p>
-Conexões humanas verdadeiras são construídas com tempo, presença e autenticidade. Quando as pessoas sentem que são ouvidas e valorizadas, elas tendem a desenvolver maior confiança e colaboração.
-</p>
-
-<p>
-Pesquisas em psicologia mostram que relações saudáveis estão associadas a maior bem-estar, menor estresse e melhor qualidade de vida. Isso ocorre porque o apoio social funciona como uma importante fonte de equilíbrio emocional.
-</p>
-
-<p>
-A conexão humana não depende apenas das palavras, mas também de atitudes, expressões, gestos e disponibilidade para compreender o outro.
-</p>
-
-</div>
-
-</div>
-
+<section class="casoFamoso">
+    <h2>Casos Famosos Investigados</h2>
+    <p>
+        Um dos casos mais conhecidos foi a investigação na casa de Amityville, onde supostamente ocorria uma atividade paranormal intensa. Outro caso famoso foi a possessão de Annabelle, uma boneca que se acredita estar possuída por uma entidade maligna. Os Warren também investigaram a assombração na casa de Enfield, na Inglaterra, e o caso da família Perron, que inspirou o filme "Invocação do Mal".
+    </p>
+    <img src="https://images.unsplash.com/photo-1613358011067-0d9adf97f0e2?ixlib=rb-4.0.4&auto=format&fit=crop&w=1500&q=80" alt="Caso de Assombração" class="imagem" />
 </section>
 
-<div class="banner">
-
-<h2>A empatia aproxima pessoas, fortalece comunidades e inspira mudanças positivas.</h2>
-
-</div>
-
-<section>
-
-<h2>Práticas para desenvolver empatia</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Escuta Ativa</h3>
-<p>
-Ouça sem interromper. Demonstre interesse genuíno pelo que a outra pessoa está compartilhando e faça perguntas respeitosas.
-</p>
-</div>
-
-<div class="card">
-<h3>Respeito</h3>
-<p>
-Mesmo quando houver opiniões diferentes, reconhecer o direito do outro de pensar diferente fortalece o diálogo.
-</p>
-</div>
-
-<div class="card">
-<h3>Gentileza</h3>
-<p>
-Pequenos atos de gentileza podem transformar o dia de alguém e criar relações mais positivas.
-</p>
-</div>
-
-<div class="card">
-<h3>Compreensão</h3>
-<p>
-Cada pessoa possui uma história única. Procurar compreender esse contexto reduz julgamentos precipitados.
-</p>
-</div>
-
-<div class="card">
-<h3>Presença</h3>
-<p>
-Estar realmente presente em uma conversa é uma das maiores demonstrações de cuidado.
-</p>
-</div>
-
-<div class="card">
-<h3>Colaboração</h3>
-<p>
-Trabalhar em conjunto fortalece o senso de pertencimento e promove resultados mais humanos.
-</p>
-</div>
-
-</div>
-
+<section class="teorias">
+    <h2>Teorias e Controvérsias</h2>
+    <p>
+        Apesar de sua fama, muitos céticos questionam a veracidade dos relatos de Warren, alegando que suas histórias podem ser exageradas ou fabricadas para fins de entretenimento. Ainda assim, eles permanecem como figuras icônicas no mundo do sobrenatural, inspirando filmes, livros e documentários. Seus arquivos pessoais continuam sendo uma fonte de estudo para aqueles que acreditam na existência do paranormal.
+    </p>
 </section>
-
-<section>
-
-<h2>Galeria da Conexão Humana</h2>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=900&q=80">
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Por que isso importa?</h2>
-
-<p>
-A empatia cria pontes entre diferentes culturas, opiniões e experiências de vida. Ela incentiva o diálogo respeitoso, diminui conflitos e promove ambientes mais acolhedores. Em escolas, empresas, famílias e comunidades, pessoas empáticas contribuem para relações mais saudáveis e colaborativas.
-</p>
-
-<p>
-A conexão humana também está diretamente relacionada ao senso de pertencimento. Sentir-se aceito e compreendido favorece o desenvolvimento emocional, estimula a criatividade e fortalece a confiança entre indivíduos.
-</p>
-
-<p>
-Embora a tecnologia facilite a comunicação, nada substitui a presença, o olhar atento, o cuidado e a disposição para compreender o outro. A verdadeira conexão nasce quando existe respeito, escuta e interesse genuíno pelas pessoas.
-</p>
-
-</section>
-
-<div class="quote">
-
-"A empatia é a linguagem silenciosa que aproxima corações e fortalece a humanidade."
-
-</div>
 
 <footer>
-
-<h3>Empatia & Conexão Humana</h3>
-
-<p>
-Cultive relações baseadas em respeito, compreensão e solidariedade.
-</p>
-
+    <p>&copy; 2024 - Informações sobre Ed e Lorraine Warren. Todos os direitos reservados.</p>
 </footer>
 
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ed e Lorraine Warren - Caçadores de Assombrações</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #f2f2f2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5b9f4?ixlib=rb-4.0.4&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ff0000;
+            text-shadow: 2px 2px 4px #000;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #ff0000;
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .imagem {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid #ff0000;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .galeria img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #ff0000;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        /* Efeito de sombra para o texto no header */
+        .shadow-text {
+            text-shadow: 2px 2px 4px #000;
+        }
+        /* Estilo para a seção de curiosidades */
+        .curiosidades {
+            background-color: #222;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+        /* Estilo para o botão de ampliar imagens */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2em;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
-<!-- ========================= -->
-<!-- CONTINUAÇÃO DO CONTEÚDO  -->
-<!-- ========================= -->
+<header>
+    <h1 class="shadow-text">Ed e Lorraine Warren</h1>
+    <p style="color:#ccc;">Caçadores de Assombrações e Pesquisadores do Sobrenatural</p>
+</header>
 
-<section>
+<section class="biografia">
+    <h2>Quem Foram Ed e Lorraine Warren?</h2>
+    <img src="https://images.unsplash.com/photo-1563912837059-4b4d4bde6f0e?ixlib=rb-4.0.4&auto=format&fit=crop&w=1500&q=80" alt="Ed e Lorraine Warren" class="imagem" />
+    <p>
+        Ed e Lorraine Warren foram um casal de investigadores do sobrenatural famosos por seus trabalhos no combate a atividades paranormais, possessões demoníacas e assombrações. Ed Warren foi um caçador de fantasmas e demonologista, enquanto Lorraine era clarividente e médiuns. Juntos, eles participaram de inúmeros casos famosos e ajudaram a resolver mistérios relacionados ao mundo espiritual.
+    </p>
+</section>
 
-<h2>Empatia no cotidiano</h2>
+<section class="casoFamoso">
+    <h2>Casos Famosos Investigados</h2>
+    <p>
+        Um dos casos mais conhecidos foi a investigação na casa de Amityville, onde supostamente ocorria uma atividade paranormal intensa. Outro caso famoso foi a possessão de Annabelle, uma boneca que se acredita estar possuída por uma entidade maligna. Os Warren também investigaram a assombração na casa de Enfield, na Inglaterra, e o caso da família Perron, que inspirou o filme "Invocação do Mal".
+    </p>
+    <img src="https://images.unsplash.com/photo-1613358011067-0d9adf97f0e2?ixlib=rb-4.0.4&auto=format&fit=crop&w=1500&q=80" alt="Caso de Assombração" class="imagem" />
+</section>
 
-<div class="grid">
+<section class="teorias">
+    <h2>Teorias e Controvérsias</h2>
+    <p>
+        Apesar de sua fama, muitos céticos questionam a veracidade dos relatos de Warren, alegando que suas histórias podem ser exageradas ou fabricadas para fins de entretenimento. Ainda assim, eles permanecem como figuras icônicas no mundo do sobrenatural, inspirando filmes, livros e documentários. Seus arquivos pessoais continuam sendo uma fonte de estudo para aqueles que acreditam na existência do paranormal.
+    </p>
+</section>
 
-<div class="text">
-
-<p>
-A empatia é construída diariamente por meio de pequenas escolhas. Cumprimentar alguém com atenção, ouvir uma história sem interromper, oferecer ajuda espontaneamente ou simplesmente perguntar como a outra pessoa está são atitudes que fortalecem relações humanas.
-</p>
-
-<p>
-Nem sempre compreender o outro significa concordar com suas opiniões. Muitas vezes significa apenas reconhecer que cada pessoa possui experiências, desafios e perspectivas diferentes. Essa compreensão favorece diálogos mais respeitosos e reduz conflitos desnecessários.
-</p>
-
-<p>
-Quando praticamos a empatia no cotidiano, criamos ambientes mais acolhedores em casa, na escola, no trabalho e na comunidade. Pequenos gestos têm potencial para gerar grandes transformações ao longo do tempo.
-</p>
-
-</div>
-
-<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80">
-
-</div>
-
+<section class="curiosidades">
+    <h2>Curiosidades</h2>
+    <ul>
+        <li>Ed Warren foi um ex-policial e caçador de fantasmas autodidata.</li>
+        <li>Lorraine Warren afirmava ter habilidades mediúnicas desde criança.</li>
+        <li>O arquivo de casos dos Warren é um dos maiores e mais completos do mundo.</li>
+        <li>Muitos acreditam que suas investigações ajudaram a prevenir tragédias espirituais.</li>
+        <li>O casal foi inspiração para vários filmes de terror, especialmente a franquia "Invocação do Mal".</li>
+    </ul>
 </section>
 
 <section>
-
-<h2>Os benefícios das conexões humanas</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>❤️ Bem-estar emocional</h3>
-<p>
-Pessoas que mantêm relações saudáveis tendem a sentir maior segurança emocional e satisfação com a vida.
-</p>
-</div>
-
-<div class="card">
-<h3>🤝 Cooperação</h3>
-<p>
-Equipes colaborativas alcançam melhores resultados quando existe confiança, respeito e comunicação aberta.
-</p>
-</div>
-
-<div class="card">
-<h3>🌱 Crescimento pessoal</h3>
-<p>
-Conviver com diferentes perspectivas amplia conhecimentos e desenvolve maturidade emocional.
-</p>
-</div>
-
-<div class="card">
-<h3>💬 Comunicação</h3>
-<p>
-A escuta ativa reduz mal-entendidos e fortalece o diálogo entre pessoas de diferentes contextos.
-</p>
-</div>
-
-<div class="card">
-<h3>🌍 Inclusão</h3>
-<p>
-Ambientes inclusivos valorizam a diversidade e permitem que todos se sintam respeitados e pertencentes.
-</p>
-</div>
-
-<div class="card">
-<h3>💙 Confiança</h3>
-<p>
-A confiança nasce quando palavras e atitudes demonstram coerência, respeito e cuidado mútuo.
-</p>
-</div>
-
-</div>
-
+    <h2>Galeria de Imagens</h2>
+    <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1606513541740-05631f363a72?ixlib=rb-4.0.4&auto=format&fit=crop&w=600&q=80" alt="Investigação paranormal 1" />
+        <img src="https://images.unsplash.com/photo-1604341937210-1005b2d6f9f8?ixlib=rb-4.0.4&auto=format&fit=crop&w=600&q=80" alt="Investigação paranormal 2" />
+        <img src="https://images.unsplash.com/photo-1606442456561-a7a26f4d20a4?ixlib=rb-4.0.4&auto=format&fit=crop&w=600&q=80" alt="Casal Warren" />
+        <img src="https://images.unsplash.com/photo-1553531503-cedd7b8e279f?ixlib=rb-4.0.4&auto=format&fit=crop&w=600&q=80" alt="Investigação de assombrações" />
+    </div>
 </section>
 
-<section>
-
-<h2>Histórias que inspiram</h2>
-
-<p>
-Em diversas comunidades ao redor do mundo, projetos sociais, voluntários e grupos comunitários demonstram diariamente o poder da empatia. Pessoas desconhecidas unem esforços para apoiar famílias em situação de vulnerabilidade, arrecadar alimentos, ensinar novas habilidades e oferecer acolhimento em momentos difíceis.
-</p>
-
-<p>
-Essas iniciativas mostram que a conexão humana ultrapassa diferenças culturais, econômicas e sociais. Sempre que alguém decide ajudar outra pessoa, cria-se uma corrente de solidariedade que inspira novas ações positivas.
-</p>
-
-<p>
-A empatia também pode ser observada em ambientes escolares, onde estudantes aprendem a resolver conflitos por meio do diálogo, e em empresas que valorizam a colaboração, o respeito e a diversidade como parte de sua cultura organizacional.
-</p>
-
-</section>
-
-<section>
-
-<h2>Como fortalecer relações humanas</h2>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=80">
-
-<img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=80">
-
+<!-- Modal para ampliar imagens -->
+<div class="modal" id="imageModal">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <img src="" alt="Imagem ampliada" id="modalImage" />
 </div>
 
-<p style="margin-top:40px;">
-Fortalecer relações humanas exige dedicação contínua. Demonstrar gratidão, reconhecer o esforço das pessoas, compartilhar conhecimento, respeitar opiniões diferentes e cultivar momentos de convivência são atitudes que aproximam indivíduos e fortalecem comunidades.
-</p>
-
-<p>
-Mesmo em um mundo digital, conversas presenciais, encontros familiares, atividades comunitárias e experiências compartilhadas continuam sendo fundamentais para criar laços duradouros e significativos.
-</p>
-
-</section>
-
-<section>
-
-<h2>Uma sociedade mais humana</h2>
-
-<p>
-Construir uma sociedade baseada na empatia significa incentivar o diálogo, combater preconceitos, promover inclusão e reconhecer o valor de cada indivíduo. A diversidade de experiências e ideias enriquece comunidades e amplia nossa capacidade de aprender uns com os outros.
-</p>
-
-<p>
-Quando praticamos a compreensão em vez do julgamento, fortalecemos a convivência e criamos oportunidades para resolver desafios de maneira colaborativa. A empatia torna-se, assim, uma ferramenta essencial para construir um futuro mais justo e solidário.
-</p>
-
-<p>
-Cada gesto de respeito, cada palavra de incentivo e cada atitude de acolhimento contribuem para formar uma rede de conexões humanas capazes de transformar vidas.
-</p>
-
-</section>
-
-<section style="background:#1e3d59;color:white;border-radius:20px;padding:80px;margin-top:80px;">
-
-<h2 style="color:white;text-align:center;">Mensagem Final</h2>
-
-<p style="max-width:900px;margin:auto;font-size:1.15rem;text-align:center;">
-A verdadeira conexão humana nasce quando escolhemos ouvir antes de julgar, compreender antes de responder e acolher antes de excluir. A empatia não elimina todas as diferenças, mas cria caminhos para que elas sejam respeitadas. Em um mundo em constante transformação, cultivar relações baseadas na confiança, na solidariedade e no respeito continua sendo uma das maiores contribuições que podemos oferecer às pessoas ao nosso redor.
-</p>
-
-</section>
-
-
-<!-- ========================================= -->
-<!-- CONTINUAÇÃO 2 - EMPATIA E CONEXÃO HUMANA -->
-<!-- ========================================= -->
-
-<style>
-.stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-    margin-top:50px;
-}
-
-.stat{
-    background:#fff;
-    border-radius:15px;
-    text-align:center;
-    padding:40px 20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.stat h3{
-    font-size:3rem;
-    color:#1e3d59;
-}
-
-.timeline{
-    position:relative;
-    margin:60px auto;
-    padding-left:30px;
-    border-left:4px solid #1e3d59;
-}
-
-.timeline-item{
-    margin-bottom:50px;
-    position:relative;
-}
-
-.timeline-item::before{
-    content:"";
-    width:18px;
-    height:18px;
-    background:#1e3d59;
-    border-radius:50%;
-    position:absolute;
-    left:-41px;
-    top:6px;
-}
-
-.testimonials{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-    margin-top:50px;
-}
-
-.testimonial{
-    background:white;
-    border-radius:15px;
-    padding:35px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.testimonial p{
-    font-style:italic;
-}
-
-.cta{
-    background:linear-gradient(135deg,#1e3d59,#2d6a8c);
-    color:white;
-    padding:90px 40px;
-    border-radius:20px;
-    text-align:center;
-}
-
-.cta h2{
-    color:white;
-}
-
-.cta a{
-    display:inline-block;
-    margin-top:30px;
-    padding:16px 40px;
-    border-radius:40px;
-    background:white;
-    color:#1e3d59;
-    text-decoration:none;
-    font-weight:bold;
-}
-</style>
-
-<section>
-
-<h2>O impacto da empatia em números</h2>
-
-<p>
-Embora a empatia não possa ser medida apenas por estatísticas, pesquisas em comportamento humano indicam que ambientes colaborativos e respeitosos favorecem o bem-estar, fortalecem relações e estimulam a criatividade. A prática diária da empatia gera benefícios que se refletem na convivência entre pessoas, organizações e comunidades.
-</p>
-
-<div class="stats">
-
-<div class="stat">
-<h3>100%</h3>
-<p>Cada pessoa merece ser ouvida com respeito.</p>
-</div>
-
-<div class="stat">
-<h3>∞</h3>
-<p>Pequenos gestos podem gerar impactos positivos que se multiplicam.</p>
-</div>
-
-<div class="stat">
-<h3>1</h3>
-<p>Uma conversa sincera pode transformar um relacionamento.</p>
-</div>
-
-<div class="stat">
-<h3>365</h3>
-<p>Todos os dias oferecem novas oportunidades para praticar empatia.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Linha do tempo da conexão humana</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-<h3>1. Ouvir</h3>
-<p>
-Toda conexão começa quando alguém decide ouvir atentamente outra pessoa, sem interrupções e sem julgamentos precipitados.
-</p>
-</div>
-
-<div class="timeline-item">
-<h3>2. Compreender</h3>
-<p>
-Após ouvir, surge a oportunidade de compreender sentimentos, necessidades e diferentes perspectivas.
-</p>
-</div>
-
-<div class="timeline-item">
-<h3>3. Respeitar</h3>
-<p>
-Mesmo diante de diferenças, o respeito fortalece o diálogo e cria confiança.
-</p>
-</div>
-
-<div class="timeline-item">
-<h3>4. Colaborar</h3>
-<p>
-Quando pessoas trabalham juntas, compartilham conhecimentos e ajudam umas às outras, surgem soluções mais criativas.
-</p>
-</div>
-
-<div class="timeline-item">
-<h3>5. Inspirar</h3>
-<p>
-Atitudes empáticas inspiram novas atitudes, criando um ciclo positivo de cooperação.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Depoimentos Inspiradores</h2>
-
-<div class="testimonials">
-
-<div class="testimonial">
-<p>
-"Aprendi que ouvir alguém com atenção pode ser muito mais importante do que oferecer uma resposta imediata."
-</p>
-
-<strong>— Participante de um projeto comunitário</strong>
-
-</div>
-
-<div class="testimonial">
-
-<p>
-"Quando comecei a praticar mais empatia no ambiente de trabalho, os conflitos diminuíram e a colaboração aumentou."
-</p>
-
-<strong>— Profissional de equipe multidisciplinar</strong>
-
-</div>
-
-<div class="testimonial">
-
-<p>
-"A verdadeira conexão acontece quando sentimos que somos aceitos exatamente como somos."
-</p>
-
-<strong>— Educadora</strong>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Pequenas atitudes que fazem diferença</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>😊 Sorria</h3>
-<p>Um sorriso sincero pode tornar um ambiente mais acolhedor.</p>
-</div>
-
-<div class="card">
-<h3>👂 Escute</h3>
-<p>Dê espaço para que outras pessoas expressem seus sentimentos.</p>
-</div>
-
-<div class="card">
-<h3>🙏 Agradeça</h3>
-<p>Reconhecer o esforço das pessoas fortalece relacionamentos.</p>
-</div>
-
-<div class="card">
-<h3>🤲 Ajude</h3>
-<p>Mesmo pequenos gestos podem aliviar dificuldades de alguém.</p>
-</div>
-
-<div class="card">
-<h3>🌱 Aprenda</h3>
-<p>Cada pessoa pode ensinar uma nova maneira de enxergar o mundo.</p>
-</div>
-
-<div class="card">
-<h3>❤️ Compartilhe</h3>
-<p>Tempo, atenção e conhecimento são presentes valiosos.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Reflexão Final</h2>
-
-<p>
-A humanidade evoluiu graças à cooperação. Desde as primeiras comunidades até as sociedades atuais, o desenvolvimento coletivo sempre dependeu da capacidade de colaborar, confiar e cuidar uns dos outros.
-</p>
-
-<p>
-A empatia continua sendo uma das competências mais importantes do século XXI. Em um mundo cada vez mais conectado digitalmente, cultivar conexões humanas autênticas representa um diferencial para indivíduos, famílias, empresas e comunidades.
-</p>
-
-<p>
-Cada conversa respeitosa, cada gesto de solidariedade e cada oportunidade de compreender outra pessoa contribuem para construir um ambiente mais inclusivo, acolhedor e humano. A mudança começa nas pequenas atitudes diárias e se fortalece quando inspira outras pessoas a agir da mesma forma.
-</p>
-
-</section>
-
-<section class="cta">
-
-<h2>Construa conexões que transformam vidas</h2>
-
-<p style="max-width:800px;margin:auto;">
-Escolha ouvir mais, compreender melhor e agir com respeito. A empatia é uma habilidade que pode ser praticada todos os dias e tem o potencial de fortalecer relações, aproximar comunidades e inspirar mudanças positivas.
-</p>
-
-
-
-</section>
-
-
-<!-- ========================================= -->
-<!-- CONTINUAÇÃO 3 - CONTEÚDO ADICIONAL -->
-<!-- Cole antes do </footer> -->
-<!-- ========================================= -->
-
-<section>
-
-<h2>Empatia nas diferentes fases da vida</h2>
-
-<div class="grid">
-
-<img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=900&q=80" alt="Família reunida">
-
-<div class="text">
-
-<p>
-A empatia acompanha o ser humano desde a infância até a terceira idade. Durante a infância, ela começa a ser desenvolvida quando crianças aprendem a reconhecer emoções próprias e alheias. Na adolescência, torna-se essencial para fortalecer amizades, compreender diferenças e construir uma identidade baseada no respeito.
-</p>
-
-<p>
-Na vida adulta, a empatia contribui para relações profissionais mais saudáveis, melhora a comunicação dentro das famílias e favorece decisões mais equilibradas. Já na terceira idade, compreender as necessidades físicas, emocionais e sociais das pessoas idosas fortalece o cuidado, reduz o isolamento e promove uma convivência mais afetuosa.
-</p>
-
-<p>
-Independentemente da idade, a empatia permanece como uma habilidade que aproxima pessoas e cria oportunidades para relações mais humanas.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Empatia na educação</h2>
-
-<p>
-A escola é um dos principais espaços para desenvolver competências socioemocionais. Professores que incentivam o diálogo, o respeito e a cooperação ajudam estudantes a construir relacionamentos mais saudáveis e a resolver conflitos de maneira pacífica.
-</p>
-
-<p>
-Projetos colaborativos, rodas de conversa, atividades em grupo e ações de voluntariado permitem que os alunos pratiquem a escuta ativa, compreendam diferentes perspectivas e desenvolvam senso de responsabilidade coletiva.
-</p>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="Sala de aula">
-
-<img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=80" alt="Estudantes colaborando">
-
-<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80" alt="Educação">
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Empatia no ambiente de trabalho</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Comunicação Transparente</h3>
-<p>
-Compartilhar informações com clareza reduz conflitos e fortalece a confiança entre equipes.
-</p>
-</div>
-
-<div class="card">
-<h3>Liderança Humanizada</h3>
-<p>
-Líderes que escutam e valorizam as pessoas criam ambientes mais colaborativos e motivadores.
-</p>
-</div>
-
-<div class="card">
-<h3>Resolução de Conflitos</h3>
-<p>
-O diálogo respeitoso favorece soluções equilibradas para desafios do dia a dia.
-</p>
-</div>
-
-<div class="card">
-<h3>Reconhecimento</h3>
-<p>
-Valorizar conquistas individuais e coletivas fortalece o senso de pertencimento.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Princípios para fortalecer conexões humanas</h2>
-
-<table style="width:100%;border-collapse:collapse;margin-top:30px;background:white;box-shadow:0 8px 25px rgba(0,0,0,.08);">
-
-<tr style="background:#1e3d59;color:white;">
-<th style="padding:15px;">Princípio</th>
-<th style="padding:15px;">Como aplicar</th>
-</tr>
-
-<tr>
-<td style="padding:15px;">Escuta</td>
-<td style="padding:15px;">Ouvir atentamente antes de responder.</td>
-</tr>
-
-<tr style="background:#f5f5f5;">
-<td style="padding:15px;">Respeito</td>
-<td style="padding:15px;">Valorizar diferentes opiniões e experiências.</td>
-</tr>
-
-<tr>
-<td style="padding:15px;">Colaboração</td>
-<td style="padding:15px;">Trabalhar em conjunto para alcançar objetivos comuns.</td>
-</tr>
-
-<tr style="background:#f5f5f5;">
-<td style="padding:15px;">Gentileza</td>
-<td style="padding:15px;">Demonstrar cuidado por meio de pequenas atitudes.</td>
-</tr>
-
-<tr>
-<td style="padding:15px;">Confiança</td>
-<td style="padding:15px;">Cumprir compromissos e agir com honestidade.</td>
-</tr>
-
-<tr style="background:#f5f5f5;">
-<td style="padding:15px;">Solidariedade</td>
-<td style="padding:15px;">Oferecer apoio quando alguém precisar.</td>
-</tr>
-
-</table>
-
-</section>
-
-<section>
-
-<h2>Frases inspiradoras</h2>
-
-<div class="cards">
-
-<div class="card">
-<p>"A verdadeira grandeza está na capacidade de compreender o outro."</p>
-</div>
-
-<div class="card">
-<p>"Cada pessoa enfrenta desafios que nem sempre conseguimos enxergar."</p>
-</div>
-
-<div class="card">
-<p>"A empatia transforma diferenças em oportunidades de aprendizado."</p>
-</div>
-
-<div class="card">
-<p>"Ouvir com atenção é uma das maiores demonstrações de respeito."</p>
-</div>
-
-<div class="card">
-<p>"A colaboração nasce quando existe confiança."</p>
-</div>
-
-<div class="card">
-<p>"Toda conexão significativa começa com um gesto de humanidade."</p>
-</div>
-
-</div>
-
-</section>
-
-<section style="background:#eef6fb;padding:80px;border-radius:20px;">
-
-<h2 style="text-align:center;">Conclusão</h2>
-
-<p style="max-width:950px;margin:30px auto;font-size:1.1rem;text-align:justify;">
-A empatia e a conexão humana são pilares fundamentais para uma convivência saudável. Elas promovem respeito, fortalecem comunidades e incentivam soluções construídas por meio do diálogo. Em um mundo repleto de mudanças, cultivar relações baseadas na compreensão e na colaboração continua sendo uma das maneiras mais eficazes de construir um futuro mais justo, inclusivo e solidário.
-</p>
-
-<p style="max-width:950px;margin:auto;font-size:1.1rem;text-align:justify;">
-Cada encontro representa uma oportunidade de aprender, compartilhar experiências e criar laços que podem durar toda a vida. A prática da empatia não exige grandes recursos, apenas disposição para ouvir, compreender e agir com respeito. Quando essa atitude se torna parte da cultura de famílias, escolas, empresas e comunidades, os benefícios se espalham por toda a sociedade.
-</p>
-
-</section>
-
-
-<!-- ========================================= -->
-<!-- FINALIZAÇÃO DA PÁGINA -->
-<!-- Coloque antes do </footer> -->
-<!-- ========================================= -->
-
-<section style="padding:100px 30px;background:linear-gradient(135deg,#1e3d59,#3c6e91);color:white;text-align:center;border-radius:20px;margin-top:80px;">
-
-<h2 style="color:white;font-size:2.8rem;margin-bottom:30px;">
-Juntos Construímos um Mundo Mais Humano
-</h2>
-
-<p style="max-width:900px;margin:0 auto 25px;font-size:1.2rem;">
-Cada gesto de respeito, cada palavra de incentivo e cada momento dedicado a ouvir alguém representam sementes de mudança. A empatia não transforma apenas relacionamentos individuais; ela fortalece comunidades, inspira cooperação e aproxima pessoas de diferentes histórias, culturas e realidades.
-</p>
-
-<p style="max-width:900px;margin:0 auto 25px;font-size:1.2rem;">
-Quando escolhemos compreender antes de julgar, colaborar antes de competir e acolher antes de excluir, contribuímos para uma sociedade mais justa, inclusiva e solidária. As grandes mudanças começam com pequenas atitudes repetidas diariamente.
-</p>
-
-<p style="max-width:900px;margin:auto;font-size:1.2rem;">
-A conexão humana é um patrimônio coletivo. Ela cresce sempre que compartilhamos conhecimento, demonstramos gentileza e reconhecemos o valor de cada pessoa.
-</p>
-
-</section>
-
-<section style="padding:90px 30px;">
-
-<h2 style="text-align:center;">Manifesto da Empatia</h2>
-
-<div style="max-width:950px;margin:50px auto;font-size:1.15rem;line-height:2;">
-
-<p>✔ Escolhemos ouvir antes de responder.</p>
-
-<p>✔ Valorizamos o respeito acima das diferenças.</p>
-
-<p>✔ Reconhecemos que cada pessoa possui uma história única.</p>
-
-<p>✔ Promovemos ambientes acolhedores e inclusivos.</p>
-
-<p>✔ Compartilhamos conhecimento, esperança e solidariedade.</p>
-
-<p>✔ Acreditamos que pequenas atitudes podem transformar vidas.</p>
-
-<p>✔ Construímos relações baseadas em confiança e cooperação.</p>
-
-<p>✔ Praticamos a empatia todos os dias.</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 style="text-align:center;">Mensagem de Encerramento</h2>
-
-<div style="max-width:1000px;margin:50px auto;text-align:justify;font-size:1.15rem;line-height:2;">
-
-<p>
-Ao longo desta jornada, vimos que a empatia vai muito além de compreender sentimentos. Ela representa uma escolha consciente de enxergar a humanidade presente em cada pessoa, valorizando suas experiências, seus desafios e suas conquistas.
-</p>
-
-<p>
-A conexão humana nasce da confiança construída em pequenas conversas, no respeito às diferenças e na disposição para colaborar. Em tempos de mudanças rápidas e intensa comunicação digital, manter relações autênticas tornou-se um dos maiores desafios e, ao mesmo tempo, uma das maiores oportunidades para promover qualidade de vida e bem-estar coletivo.
-</p>
-
-<p>
-Independentemente da idade, profissão ou lugar onde vivemos, sempre existe uma oportunidade para agir com gentileza. Um simples cumprimento, uma conversa sincera ou uma palavra de incentivo podem marcar profundamente a vida de alguém.
-</p>
-
-<p>
-Que este conteúdo inspire novas atitudes, incentive diálogos respeitosos e fortaleça a construção de comunidades mais acolhedoras. Afinal, cada pessoa tem o poder de contribuir para um mundo melhor por meio de pequenas ações realizadas com respeito, compreensão e solidariedade.
-</p>
-
-</div>
-
-</section>
-
-<section style="padding:80px 30px;background:#f3f7fa;border-radius:20px;">
-
-<h2 style="text-align:center;">Obrigado pela Leitura</h2>
-
-<p style="max-width:850px;margin:35px auto;text-align:center;font-size:1.2rem;">
-Esperamos que esta leitura tenha inspirado novas reflexões sobre o valor da empatia e da conexão humana. Que cada encontro seja uma oportunidade para fortalecer vínculos, cultivar respeito e construir um futuro onde a cooperação e a solidariedade façam parte do cotidiano.
-</p>
-
-<div style="text-align:center;margin-top:50px;">
-
-<a href="#top"
-style="
-background:#1e3d59;
-color:white;
-padding:18px 45px;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
-display:inline-block;
-transition:.3s;
-">
-⬆ Voltar ao Início
-</a>
-
-</div>
-
-</section>
+<script>
+    // Script para abrir imagens em modal
+    const galleryImages = document.querySelectorAll('.galeria img');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.getElementById('closeModal');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
 
 <footer>
-
-<h2 style="margin-bottom:15px;">Empatia & Conexão Humana</h2>
-
-<p>
-Cultivar a empatia é fortalecer laços, promover respeito e construir um futuro melhor para todos.
-</p>
-
-<hr style="margin:35px auto;width:80%;opacity:.3;">
-
-
+    <p>&copy; 2024 - Informações sobre Ed e Lorraine Warren. Todos os direitos reservados.</p>
 </footer>
 
 </body>
